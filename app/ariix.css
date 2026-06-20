@@ -643,7 +643,7 @@
     .social-btn svg { width: 17px; height: 17px; stroke: var(--purple-light); fill: none; }
     .social-btn:hover { background: var(--grad); border-color: transparent; }
     .social-btn:hover svg { stroke: white; }
-    .footer-col h4 { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 1.2rem; font-weight: 600; }
+    .footer-col h4, .footer-col-title { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 1.2rem; font-weight: 600; }
     .footer-col ul { list-style: none; }
     .footer-col li { margin-bottom: 0.6rem; }
     .footer-col a { text-decoration: none; color: rgba(255,255,255,0.55); font-size: 0.83rem; transition: color 0.25s; }

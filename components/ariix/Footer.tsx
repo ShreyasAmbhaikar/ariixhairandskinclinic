@@ -13,13 +13,13 @@ export function Footer() {
   <div className="footer-grid">
     <div>
       <div className="footer-logo mb-6 flex items-center gap-2 md:gap-3">
-        <img src="/images/logo-symbol-footer.webp" alt="ARIIX Symbol" className="!h-[50px] md:!h-[60px] w-auto object-contain" />
-        <img src="/images/logo-text-footer.webp" alt="ARIIX Name" className="!h-[48px] md:!h-[57px] w-auto object-contain" />
+        <img src="/images/logo-symbol-footer.webp" alt="ARIIX Symbol" width="150" height="149" className="!h-[50px] md:!h-[60px] w-auto object-contain" />
+        <img src="/images/logo-text-footer.webp" alt="ARIIX Name" width="300" height="133" className="!h-[48px] md:!h-[57px] w-auto object-contain" />
       </div>
       <p className="footer-about">Premium dermatology, laser therapies, and advanced hair restoration clinic offering personalized, evidence-based skin and hair care by qualified specialists.</p>
     </div>
     <div className="footer-col">
-      <h4>Hair Treatments</h4>
+      <div className="footer-col-title">Hair Treatments</div>
       <ul>
         <li><Link href="/hair-transplant">Hair Transplant</Link></li>
         <li><Link href="/prp-hair-treatment">PRP Hair Treatment</Link></li>
@@ -30,7 +30,7 @@ export function Footer() {
       </ul>
     </div>
     <div className="footer-col">
-      <h4>Laser Treatments</h4>
+      <div className="footer-col-title">Laser Treatments</div>
       <ul>
         <li><Link href="/laser-hair-removal">Laser Hair Removal</Link></li>
         <li><Link href="/laser-tattoo-removal">Laser Tattoo Removal</Link></li>
@@ -39,7 +39,7 @@ export function Footer() {
       </ul>
     </div>
     <div className="footer-col">
-      <h4>Skin Treatments</h4>
+      <div className="footer-col-title">Skin Treatments</div>
       <ul>
         <li><Link href="/acne-treatment">Acne Treatment</Link></li>
         <li><Link href="/acne-scar-treatment">Acne Scar Treatment</Link></li>
@@ -53,10 +53,10 @@ export function Footer() {
       </ul>
     </div>
     <div className="footer-col">
-      <h4>Facial & Rejuvenation</h4>
+      <div className="footer-col-title">Facial &amp; Rejuvenation</div>
       <ul>
         <li><Link href="/hydra-facial">Hydra Facial</Link></li>
-        <li><Link href="/skin-polishing-and-rejuvenation">Skin Polishing & Rejuvenation</Link></li>
+        <li><Link href="/skin-polishing-and-rejuvenation">Skin Polishing &amp; Rejuvenation</Link></li>
         <li><Link href="/medi-facial">Medi Facial</Link></li>
         <li><Link href="/vampire-facial">Vampire Facial</Link></li>
         <li><Link href="/oxy-hydra-facial">Oxy Hydra Facial</Link></li>
@@ -64,7 +64,7 @@ export function Footer() {
       </ul>
     </div>
     <div className="footer-col">
-      <h4>Quick Links</h4>
+      <div className="footer-col-title">Quick Links</div>
       <ul>
         <li><Link href="/">Home</Link></li>
         <li><Link href="/about">About Us</Link></li>
@@ -77,12 +77,12 @@ export function Footer() {
 
   {/* Locations Row */}
   <div className="border-t border-white/10 pt-8 mt-8 mb-8">
-    <h4 className="font-bold text-[12px] uppercase tracking-[0.2em] text-[var(--purple-light)] mb-4">Our Locations</h4>
+    <div className="font-bold text-[12px] uppercase tracking-[0.2em] text-[var(--purple-light)] mb-4">Our Locations</div>
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 text-[13px] text-[var(--grey)] leading-[1.6]">
       {/* Sinhagad Road Branch */}
       <div className="flex flex-col sm:flex-row gap-4 justify-between items-start">
         <div className="flex-1 min-w-[200px]">
-          <h5 className="font-bold text-white mb-2">Sinhagad Road Branch (Manikbag)</h5>
+          <div className="font-bold text-white mb-2 text-[14.5px]">Sinhagad Road Branch (Manikbag)</div>
           <p className="mb-2 text-[12.5px] leading-relaxed text-white/70">2nd Floor, Subhadra Smruti Building, Manikbag,<br />Sinhgad Rd, opposite Indian Oil Petrol Pump,<br />above Indian Overseas Bank, Anand Nagar, Pune 411051</p>
           <a href="https://www.google.com/maps/place/ARIIX+HAIR+AND+SKIN+CLINIC/@18.4721754,73.8210038,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc295485fab23a1:0x2795808d582f8da5!8m2!3d18.4721754!4d73.8210038!16s%2Fg%2F11hgf0p89n?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" className="text-[var(--purple-light)] hover:text-white hover:underline font-semibold block mb-1">📍 Get Directions</a>
           <a href="tel:+917447424938" className="hover:underline font-semibold text-white/95">📞 +91 74474 24938</a>
@@ -103,7 +103,7 @@ export function Footer() {
       {/* Kharadi Branch */}
       <div className="flex flex-col sm:flex-row gap-4 justify-between items-start">
         <div className="flex-1 min-w-[200px]">
-          <h5 className="font-bold text-white mb-2">Kharadi Branch (Wagholi)</h5>
+          <div className="font-bold text-white mb-2 text-[14.5px]">Kharadi Branch (Wagholi)</div>
           <p className="mb-2 text-[12.5px] leading-relaxed text-white/70">Near Unnati Mahindra Showroom Pune Nagar Road,<br />Upper Kharadi Main Rd, behind Komal Silk House,<br />Wagholi, Pune, Maharashtra 412207</p>
           <a href="https://www.google.com/maps/place/ARIIX+HAIR+AND+SKIN+CLINIC/data=!4m2!3m1!1s0x0:0x20054517738dcdfa?sa=X&ved=1t:2428&hl=en&ictx=111" target="_blank" rel="noopener noreferrer" className="text-[var(--purple-light)] hover:text-white hover:underline font-semibold block mb-1">📍 Get Directions</a>
           <a href="tel:+917447424938" className="hover:underline font-semibold text-white/95">📞 +91 74474 24938</a>

@@ -64,7 +64,7 @@ export default function HomePage() {
   </div>
   <div className="hero-right">
     <div className="hero-girl-img absolute inset-0 z-[2] overflow-hidden" >
-      <img src="/images/extracted/img_2.jpg" alt="Skin Care" className="h-full w-full object-cover"  />
+      <img src="/images/extracted/img_2.webp" alt="Skin Care" width={666} height={1000} className="h-full w-full object-cover" fetchPriority="high" />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(91,45,142,0.3) 0%, rgba(91,45,142,0.1) 50%, rgba(91,45,142,0.7) 100%)' }}></div>
     </div>
     <div 
@@ -216,27 +216,27 @@ export default function HomePage() {
   </div>
     <div className="promo-grid">
       <div className="promo-card reveal visible">
-        <img src="/images/results/hair-transplant-male-2.webp" alt="Crown Hair Restoration Results" />
+        <img src="/images/results/hair-transplant-male-2.webp" alt="Crown Hair Restoration Results" width={600} height={600} />
         <div className="promo-card-overlay"><div className="promo-card-label">💉 Crown Hair Restoration — Real Result</div></div>
       </div>
       <div className="promo-card reveal reveal-delay-1 visible">
-        <img src="/images/results/acne-treatment-female.webp" alt="Acne Control Treatment Results" />
+        <img src="/images/results/acne-treatment-female.webp" alt="Acne Control Treatment Results" width={600} height={600} />
         <div className="promo-card-overlay"><div className="promo-card-label">🌸 Acne Control Treatment — Real Result</div></div>
       </div>
       <div className="promo-card reveal reveal-delay-2 visible">
-        <img src="/images/results/hair-transplant-male-1.webp" alt="Advanced Hair Transplantation Results" />
+        <img src="/images/results/hair-transplant-male-1.webp" alt="Advanced Hair Transplantation Results" width={600} height={600} />
         <div className="promo-card-overlay"><div className="promo-card-label">💪 Advanced Hair Transplantation — Real Result</div></div>
       </div>
       <div className="promo-card reveal visible">
-        <img src="/images/results/scar-treatment-kid.webp" alt="Scar Treatment & Skin Healing Results" />
+        <img src="/images/results/scar-treatment-kid.webp" alt="Scar Treatment & Skin Healing Results" width={600} height={600} />
         <div className="promo-card-overlay"><div className="promo-card-label">✨ Scar Treatment & Skin Healing — Real Result</div></div>
       </div>
       <div className="promo-card reveal reveal-delay-1 visible">
-        <img src="/images/results/hair-thinning-female.webp" alt="Female Hair Restoration Results" />
+        <img src="/images/results/hair-thinning-female.webp" alt="Female Hair Restoration Results" width={600} height={600} />
         <div className="promo-card-overlay"><div className="promo-card-label">💇‍♀️ Female Hair Restoration — Real Result</div></div>
       </div>
       <div className="promo-card reveal reveal-delay-2 visible">
-        <img src="/images/results/hair-transplant-male-3.webp" alt="Advanced Hair Restoration Results" />
+        <img src="/images/results/hair-transplant-male-3.webp" alt="Advanced Hair Restoration Results" width={600} height={600} />
         <div className="promo-card-overlay"><div className="promo-card-label">✨ Advanced Hair Restoration — Real Result</div></div>
       </div>
     </div>
@@ -295,10 +295,12 @@ export default function HomePage() {
             <img 
               src={item.image} 
               alt={item.alt} 
+              width={44} 
+              height={44} 
               className="h-11 w-11 rounded-full object-cover border-2 border-white ring-2 ring-[var(--purple-light)]/35 shrink-0" 
             />
             <div>
-              <h4 className="font-card-title text-[14.5px] font-bold text-[var(--charcoal)] leading-tight">{displayName}</h4>
+              <h3 className="font-card-title text-[14.5px] font-bold text-[var(--charcoal)] leading-tight">{displayName}</h3>
               {isLocalGuide && (
                 <span className="inline-flex items-center gap-1 text-[8.5px] font-extrabold uppercase tracking-wider text-[var(--purple)] bg-[var(--lavender-bg)] px-2 py-0.5 rounded-full mt-1.5 border border-[var(--lavender-mid)]">
                   Local Guide

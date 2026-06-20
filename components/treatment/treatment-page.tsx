@@ -300,7 +300,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
                 <div className="rounded-[20px] bg-white/14 border border-white/20 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] text-left backdrop-blur-sm">
                   <div className="flex items-center gap-2 mb-1.5 text-white">
                     <MapPin className="h-4 w-4 text-[var(--purple-light)]" />
-                    <h3 className="font-extrabold text-[14.5px] tracking-wide text-white">Kharadi Branch</h3>
+                    <div className="font-bold text-[14.5px] tracking-wide text-white">Kharadi Branch</div>
                   </div>
                   <p className="text-[12.5px] text-white/80 leading-relaxed mb-2.5">
                     Near Unnati Mahindra Showroom, Upper Kharadi Main Rd, behind Komal Silk House, Wagholi, Pune 412207
@@ -325,7 +325,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
                 <div className="rounded-[20px] bg-white/14 border border-white/20 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] text-left backdrop-blur-sm">
                   <div className="flex items-center gap-2 mb-1.5 text-white">
                     <MapPin className="h-4 w-4 text-[var(--purple-light)]" />
-                    <h3 className="font-extrabold text-[14.5px] tracking-wide text-white">Sinhagad Road Branch</h3>
+                    <div className="font-bold text-[14.5px] tracking-wide text-white">Sinhagad Road Branch</div>
                   </div>
                   <p className="text-[12.5px] text-white/80 leading-relaxed mb-2.5">
                     2nd Floor, Subhadra Smruti Building, Manikbag, opposite Indian Oil Petrol Pump, Anand Nagar, Sinhgad Rd, Pune 411051

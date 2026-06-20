@@ -7,7 +7,7 @@ export function getLlmsText() {
 
 ${siteConfig.description}
 
-- **Website**: ${siteConfig.url}
+- **Website**: [${siteConfig.name}](${siteConfig.url})
 - **Phone**: ${siteConfig.phone}
 - **Email**: ${siteConfig.email}
 - **Address**: ${siteConfig.address.streetAddress}, ${siteConfig.address.addressLocality}, ${siteConfig.address.addressRegion} ${siteConfig.address.postalCode}, ${siteConfig.address.addressCountry}
@@ -15,16 +15,16 @@ ${siteConfig.description}
 - **Geolocation**: Latitude ${siteConfig.geo.latitude}, Longitude ${siteConfig.geo.longitude}
 
 ## All Skin, Hair & Laser Treatments & Services
-${siteConfig.treatments.map((t) => `- **${t.title}** (${siteConfig.url}${t.href}): ${t.description}`).join("\n")}
+${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href}): ${t.description}`).join("\n")}
 
 ## Useful Navigation Links
-- **Home**: ${siteConfig.url}/
-- **About the Clinic**: ${siteConfig.url}/about
-- **Our Services Directory**: ${siteConfig.url}/treatment
-- **Patient Testimonials**: ${siteConfig.url}/testimonials
-- **Contact Info & Directions**: ${siteConfig.url}/contact-us
-- **Gallery**: ${siteConfig.url}/gallery
-- **Sitemap XML**: ${siteConfig.url}/sitemap.xml
+- [**Home**](${siteConfig.url}/)
+- [**About the Clinic**](${siteConfig.url}/about)
+- [**Our Services Directory**](${siteConfig.url}/treatment)
+- [**Patient Testimonials**](${siteConfig.url}/testimonials)
+- [**Contact Info & Directions**](${siteConfig.url}/contact-us)
+- [**Gallery**](${siteConfig.url}/gallery)
+- [**Sitemap XML**](${siteConfig.url}/sitemap.xml)
 `;
 }
 

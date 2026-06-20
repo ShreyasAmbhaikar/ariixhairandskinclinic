@@ -26,8 +26,8 @@ export function Header() {
       <nav id="mainNav" className="!py-2 md:!py-2.5">
         {/* Logo */}
         <Link href="/" className="logo flex items-center gap-2 md:gap-3 py-1 md:py-1.5">
-          <img src="/images/logo-symbol.webp" alt="ARIIX Symbol" className="!h-[40px] md:!h-[48px] w-auto object-contain" />
-          <img src="/images/logo-text.webp" alt="ARIIX Name" className="!h-[38px] md:!h-[46px] w-auto object-contain" />
+          <img src="/images/logo-symbol.webp" alt="ARIIX Symbol" width="150" height="149" fetchPriority="high" className="!h-[40px] md:!h-[48px] w-auto object-contain" />
+          <img src="/images/logo-text.webp" alt="ARIIX Name" width="300" height="133" fetchPriority="high" className="!h-[38px] md:!h-[46px] w-auto object-contain" />
         </Link>
         {/* Nav links */}
         <ul className="nav-links" id="navLinks">
