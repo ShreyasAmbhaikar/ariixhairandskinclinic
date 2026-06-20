@@ -1,0 +1,507 @@
+<html class="light" lang="en"><head></head><body class="font-body-main text-on-surface antialiased">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smile Bright - Dental Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "border-overlay": "rgba(255, 255, 255, 0.12)",
+                        "on-surface-variant": "#434655",
+                        "surface-container-high": "#e7e7f4",
+                        "on-tertiary-container": "#fffbff",
+                        "tertiary": "#9f3c00",
+                        "tertiary-fixed": "#ffdbcd",
+                        "on-tertiary-fixed": "#360f00",
+                        "primary-fixed-dim": "#b5c4ff",
+                        "cyan-soft": "#16C7EB",
+                        "inverse-on-surface": "#f0f0fc",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#0050e2",
+                        "secondary-fixed": "#bee9ff",
+                        "text-muted": "#667085",
+                        "outline": "#737687",
+                        "outline-variant": "#c3c5d8",
+                        "card-white": "#FFFFFF",
+                        "background": "#faf8ff",
+                        "tertiary-container": "#c84d00",
+                        "error": "#ba1a1a",
+                        "on-surface": "#191b24",
+                        "primary": "#0050e2",
+                        "secondary-container": "#2ccaff",
+                        "page-bg": "#E4E9F3",
+                        "on-primary-container": "#00041a",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#b5c4ff",
+                        "on-secondary-container": "#00526a",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#00164e",
+                        "surface-container": "#ededf9",
+                        "primary-dark": "#2457E8",
+                        "surface-container-low": "#f3f2ff",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e1ee",
+                        "surface-variant": "#e1e1ee",
+                        "primary-fixed": "#dce1ff",
+                        "on-background": "#191b24",
+                        "inverse-surface": "#2e3039",
+                        "on-secondary": "#ffffff",
+                        "blue-soft": "rgba(255, 255, 255, 0.12)",
+                        "on-primary-fixed-variant": "#003cad",
+                        "surface-bright": "#faf8ff",
+                        "on-error": "#ffffff",
+                        "surface": "#faf8ff",
+                        "text-dark": "#111827",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d9d9e5",
+                        "on-secondary-fixed-variant": "#004d64",
+                        "section-light": "#F4F8FF",
+                        "primary-container": "#326bff",
+                        "on-secondary-fixed": "#001f2a",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "secondary-fixed-dim": "#69d3ff",
+                        "secondary": "#006684",
+                        "cyan": "#28C8FD"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "card": "16px",
+                        "card-lg": "24px"
+                    },
+                    "spacing": {
+                        "card-padding": "32px",
+                        "gutter": "24px",
+                        "section-v-mobile": "60px",
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "content-max": "1040px",
+                        "section-v-desktop": "90px"
+                    },
+                    "fontFamily": {
+                        "section-heading": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "hero-heading": ["Plus Jakarta Sans"],
+                        "cta-statement": ["Plus Jakarta Sans"],
+                        "nav-link": ["Plus Jakarta Sans"],
+                        "card-title": ["Plus Jakarta Sans"],
+                        "body-main": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "section-heading": ["42px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                        "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "hero-heading": ["64px", {"lineHeight": "1.05", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "cta-statement": ["50px", {"lineHeight": "1.22", "fontWeight": "800"}],
+                        "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                        "card-title": ["20px", {"lineHeight": "1.4", "fontWeight": "800"}],
+                        "body-main": ["16px", {"lineHeight": "1.7", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.page-bg'); }
+        .canvas-wrapper { max-width: theme('spacing.container-max'); margin: 0 auto; background-color: theme('colors.surface-container-lowest'); min-height: 100vh; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05); }
+    </style>
+<div class="canvas-wrapper relative">
+<!-- TopNavBar Component -->
+<nav class="bg-white/90 backdrop-blur-md fixed top-0 left-0 right-0 w-full z-50 border-b border-slate-100 transition-colors">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 md:px-16 h-20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">dentistry</span>
+<a class="font-['Plus_Jakarta_Sans'] text-[24px] font-bold tracking-tight text-text-dark" href="#">Smile Bright</a>
+</div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-[14px] font-medium tracking-tight">
+<a class="text-text-dark hover:text-primary-container transition-colors" href="#">About Us</a>
+<a class="text-text-dark hover:text-primary-container transition-colors" href="#">Our Services</a>
+<a class="text-text-dark hover:text-primary-container transition-colors" href="#">Testimonials</a>
+<a class="text-text-dark hover:text-primary-container transition-colors" href="#">Team</a>
+<a class="text-text-dark hover:text-primary-container transition-colors" href="#">FAQ</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-7 py-3 h-[44px] rounded-full bg-primary-container text-white font-label-sm hover:bg-primary-dark transition-colors duration-180 flex items-center justify-center">Contact us</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- 2. Hero Section -->
+<section class="bg-surface-container-lowest pt-20 pb-[72px] px-8 md:px-16 relative overflow-hidden">
+<div class="max-w-[1080px] mx-auto text-center relative z-10">
+<div class="flex flex-col items-center justify-center mb-8 gap-3">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-3">
+<img alt="Avatar 1" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHylKXicvZUnEcizXLgezJ7Q_DQytAumKFj69XCcrzapDq7pPX9HbeGrI8yt0tC59Bw7l3-oyE8Y2Qq5NI72FjJnocysFDnM5Ws9TgJQ8_3_aQsLWw8c2TVs1lZUl4hyuijK4UCnsXCvuxfD4bcVnQmwwk_aJU9BWqzieTLPGyXpl_Bfwo935-KIASzv7fF_s-O3Z1c_wMQfsYCMHRe5WBAZvxbmuqQzWIzpdUxMveFuHTh4Y9I47GQ4bthEk-YDlc-Mu9JDtZag"/>
+<img alt="Avatar 2" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5dqdOL8CRLQ4GQp3_PbVQSYGag_sAkCnWpIKBkD7Ml-1CGwta5ti1kKKsl_Rtl6mG9Oy1DtWoPl1CHMWajMF3Fjw6zF3YrcXsrMtQeRkQhktUBLD3__SwyUpxp95mctIilnQ3BbsptuemBh6fiRy4cWjjqW-NMjW2iT0VX4-uadyAVY09ZLkbBsRY5bRnpIZFdTreXoxf4n1jaFYpI-Ub7yO_uGtpGC1IzN_w3Hpj6lcHjI3XCrHVSXoDavmz7ELhGkRwNStRig"/>
+<img alt="Avatar 3" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdaT7u0LnrJulCzadPvfEqwrcT-QKnyPNhmcXNjrnHOckdTtEXnvUVPm89ZYZ7oU-BJNtVwTod6rcM9t5cWqnlvN0oHnswNzquRksYb892pBkkXg-4IscpAoY7Sr14vIpvikHzrzTVzwkYnI7KbeCi5YEd_cfDJHxnAP2cCp2qSQ-Y4gM5ETppcgVmJuxvW7yYJOC_Ohx2nRiqesopujevN57AO_hyRGQ12KUiQ5KTp7mKXpEcyBZv3mdO_Xi_W1xRq2vi2NLldA"/>
+<img alt="Avatar 4" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS_JLXgHxujUmObdkmoCRfhJI_cCz0Qupxz6lxmTFj5loaCK8ZHVl-bHlWGHJ8mReEtHiZCHcunpqu2F0t3e6AscpSCaJhB3car7io1t1ucFzD-LHy06oSA0ij8a1jVu0C-FFPJwak-GZTr-D0K1uiiF4e1wz-rKjXddZAiTIrN2ckW4zbV6RBnmOTdrSLcPUDdjPVx2GoohlKowac_o9PHwtvQLVdoHb4Lh18WmAty4BDoMQiD7QBsOPCW0Hn213kEWz5-F6Q0g"/>
+</div>
+<span class="font-label-sm text-text-muted text-[13px]">16k+ Satisfied Patients</span>
+</div>
+</div>
+<h1 class="font-hero-heading text-[48px] md:text-[72px] text-text-dark mb-6 max-w-4xl mx-auto leading-[1.1]">
+<span class="text-primary-container">Dental</span> Clinic 
+                        <span class="inline-block align-middle mx-3 w-[120px] h-[48px] rounded-full overflow-hidden shadow-sm">
+<img alt="Smile Pill" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ_OKxQncp60GfccVN6jYA571ObFVCf2CTqqt6UGru6aze8nc2LR8yUowqYgFoaTNzcX8rb2pgcMjX1A_AdoQD9Px4kVjHxn5ATZWnfihJWfvEaIIqKmK0qlo-753RR_U0vQ_V5ANA8euwRBrN4hhDIB9bWQPSctTsxgRi0B56LOa1oGqaQTLl8Dn0d441SUOISsxTIkKJqPovdy2nw9mjC5z8DR0CJQQ7NOOrHdlzWXwaYmXytreIWaEjMv7EKQxultF7V4TVJA"/>
+</span>
+That <br/>You Can Trust
+                    </h1>
+<p class="font-body-main text-[16px] text-text-muted max-w-[620px] mx-auto mb-10">
+                        Our Dental Clinic offers trusted care for your smile. We provide expert treatments and personalized service to ensure your oral health shines with confidence.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="px-[28px] h-[46px] rounded-full bg-primary-container text-white font-label-sm hover:bg-primary-dark transition-colors duration-180">View Services</button>
+<button class="px-[28px] h-[46px] rounded-full border-2 border-cyan-soft text-cyan-soft font-label-sm hover:bg-cyan-soft/10 transition-colors duration-180">Schedule a Call</button>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="hidden lg:flex absolute top-32 left-[10%] w-[140px] h-[140px] items-center justify-center">
+<svg class="absolute w-full h-full animate-[spin_15s_linear_infinite]" viewbox="0 0 100 100">
+<path d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" id="circlePath"></path>
+<text class="text-[10px] font-bold text-text-dark tracking-[0.2em] uppercase">
+<textpath href="#circlePath" startoffset="0%">Smile Bright Clinic • 12+ Years Experience •</textpath>
+</text>
+</svg>
+<span class="absolute material-symbols-outlined text-[40px] text-cyan-soft" style="font-variation-settings: 'FILL' 1;">dentistry</span>
+</div>
+<div class="hidden lg:flex absolute top-32 right-[10%] w-[130px] h-[130px] items-center justify-center">
+<img alt="Tooth 3D" class="w-full h-full object-contain animate-[bounce_3s_ease-in-out_infinite]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2QwkWEF5PdC1HaW30wsAyx99bfeOIsbJTuchxJtz8Yg84ylm8XIWz-E8rEUH0yv_O2NfmPQFoqcPTMmntHpL4fO94mwnPbF3ZSks0nRMRA2Urzmc0u_FDjOQ0gkk3yB70OnKHRvyzL7jbYLHzOBAn_PPinC9BFpwwW9sRXhi1UdGP7r-fnhX9JfAAajqOnX9U5DDqfqMZ66L55jCxWxPJt_6X3Ihjsgt0vpDxTx19iCmJlwngSbJmNJgDNm53QohcseWGGWk4wg"/>
+</div>
+<!-- Bottom Grid -->
+<div class="mt-20 max-w-[1040px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-4">
+<div class="rounded-[24px] overflow-hidden h-[340px] shadow-sm relative col-span-1">
+<img alt="Dental Checkup" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_gOIMKGSmh7guqW0A2oaYbcRjsDCPtDi2lthL5YXhVJFTgu3aWf-eBdAPGatxbEfAKbjvf6ljANxwT5XTe-rjt3ig3PfsEACpkQdynzyVIrw3-DzP7-3q3Sno2lpy-PhlnnXWypUVV1g5S4lx4sT4OXSEO1nt4ef-DPR1c3sUxXYiE4P6Wbfr3mF1YmzBAG0rkM-UCd2xZY90i58peZ9n7gayCX3NN9-0OLq2bPFuQ-YEQAHIkKNyNwBZkoaJW7_KctjlAxwPgQ"/>
+</div>
+<div class="rounded-[24px] overflow-hidden h-[250px] shadow-sm relative col-span-1 md:mt-[90px]">
+<img alt="Child Patient" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD4xyIGoSC6FTvGPtbRAGUSSCO00GrkUkLIfa9vErO8St2zutupX0ZgnXlljG4RZSSLetFYULziYHFHa8TTktB_vRDgnD9nS1HpYRDkZB3BCg-VPHqYgTZsPi3GzrNIOV9ZkLOq2GMC_Sy7muTfMi6Hwx_BxBVIc7jlBUpTlfnOfKwGb_v39qD4kpMW44YTLeeXC0ZMwdEmq1sdmBswz1EHlZRK5Sp922Hf6CMPu1k0UDJYH7S7IiDS4OR3xpZYegVA-BUqc9pVA"/>
+</div>
+<div class="rounded-[24px] bg-primary-container p-8 flex flex-col justify-end shadow-sm h-[340px] col-span-1 relative">
+<span class="material-symbols-outlined text-white bg-white/20 p-3 rounded-full w-[52px] h-[52px] flex items-center justify-center absolute top-8 left-8 text-2xl">group</span>
+<div class="mt-auto">
+<div class="font-hero-heading text-[40px] font-extrabold text-white leading-none mb-2">86+</div>
+<div class="font-body-main text-white/90 text-[15px]">Skilled Dentists</div>
+</div>
+</div>
+<div class="rounded-[24px] overflow-hidden h-[340px] shadow-sm relative col-span-1">
+<img alt="Smiling Patient" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDB2wUDc87e7Z7hYb-TitgnXmyiSfH72hkKcxYZJUaRuo2rpPPNPqPt4whv2wm2dMfhX1SCghcKv5l_Z9HICNVSULOi7qZREbggvj-qmSO4eCXz4EM4bLpJAJqnCZAy7_smNk3D9Cmv2PzQKi_a0lIS5ks9aXegPDCwAyrWmJNRQV8vI-WpYhDoKftVfcZ_qytyLMyPfp1N9iou0QsNLZJDoUjvxJ5WMChn4Svfoua16w9udFR1KhoIJH5l2ZgWD1_3nrV6PzM6w"/>
+</div>
+</div>
+</section>
+<!-- 3. Dental Services Section -->
+<section class="bg-[#326BFF] py-[88px] px-8 md:px-16">
+<h2 class="font-section-heading text-section-heading text-white text-center mb-[54px]">Our Dental Services</h2>
+<div class="max-w-[1040px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[28px]">
+<div class="bg-white rounded-[16px] p-[32px] h-full flex flex-col shadow-sm">
+<div class="bg-primary-container w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-3xl">clean_hands</span>
+</div>
+<h3 class="font-card-title text-[22px] font-bold text-text-dark mb-4">Teeth Whitening</h3>
+<p class="font-body-main text-[15px] text-text-muted mb-8">Teeth whitening is an effective solution to remove stains and discoloration. Perfect way to boost your confidence.</p>
+<button class="mt-auto px-6 py-2 rounded-full border border-primary-container text-primary-container font-label-sm text-[14px] w-max hover:bg-primary-container/5 transition-colors">Learn More</button>
+</div>
+<div class="bg-white rounded-[16px] p-[32px] h-full flex flex-col shadow-sm">
+<div class="bg-primary-container w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-3xl">implants</span>
+</div>
+<h3 class="font-card-title text-[22px] font-bold text-text-dark mb-4">Dental Implant</h3>
+<p class="font-body-main text-[15px] text-text-muted mb-8">Dental implants provide a lasting fix for missing teeth. A reliable and long-lasting choice for your dental needs.</p>
+<button class="mt-auto px-6 py-2 rounded-full border border-primary-container text-primary-container font-label-sm text-[14px] w-max hover:bg-primary-container/5 transition-colors">Learn More</button>
+</div>
+<div class="bg-white rounded-[16px] p-[32px] h-full flex flex-col shadow-sm">
+<div class="bg-primary-container w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-3xl">medical_services</span>
+</div>
+<h3 class="font-card-title text-[22px] font-bold text-text-dark mb-4">Dental Exams</h3>
+<p class="font-body-main text-[15px] text-text-muted mb-8">Regular dental exams help protect your teeth and gums, catch problems early, and keep your smile bright and healthy.</p>
+<button class="mt-auto px-6 py-2 rounded-full border border-primary-container text-primary-container font-label-sm text-[14px] w-max hover:bg-primary-container/5 transition-colors">Learn More</button>
+</div>
+</div>
+<div class="text-center mt-[52px]">
+<button class="px-[28px] h-[42px] rounded-full bg-cyan-soft text-white font-label-sm hover:bg-cyan transition-colors duration-180">View All Services</button>
+</div>
+</section>
+<!-- 4. About / Confident Smile Section -->
+<section class="bg-white py-[90px] px-8 md:px-16">
+<div class="max-w-[1040px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<!-- Image Column (Now on the left) -->
+<div class="relative flex justify-center items-center">
+<div class="relative w-full aspect-[1.1] max-w-[500px]">
+<!-- The organic background shape -->
+<div class="absolute inset-0 bg-surface-container-low rounded-[40px] rounded-tl-[120px] rounded-br-[120px] translate-x-4 translate-y-4"></div>
+<!-- The Image with the specific shape -->
+<div class="relative w-full h-full overflow-hidden rounded-[40px] rounded-tl-[120px] rounded-br-[120px]">
+<img alt="Confident Smile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhKq_wrU40qsVpyefKu8N-Vbu9axM3KQtFMbctUb9b8fc3Cc1Z65GIKDqJ5Gywje9BgZyu2PGFzNhIE1Q0kKKEXpPS9PFqceOSagYAqKD6V2c0CkdMHNWnRYrF_w2JRn2quyS9ztfrfml0sBqMoFAhxsp1b7Z4owIgU_c763pW5ptMCv1FQ_7gsX3OSzOYeOyS6GiXQ7S-BvmYco1N-c3x8NoHcrbfKoBk8_59Mp1iEQye0_fIp8wmUe6iiMXYoyzojX6a-FAY"/>
+</div>
+</div>
+</div>
+<!-- Content Column (Now on the right) -->
+<div class="flex flex-col">
+<h2 class="font-section-heading text-[44px] leading-[1.12] text-text-dark mb-6">Achieve a Confident<br/>Smile With Us</h2>
+<p class="font-body-main text-[16px] text-text-muted mb-8">
+            At Smile Bright, we’re dedicated to helping you achieve a healthy, radiant smile. Our skilled team provides personalized, gentle care using the latest technology in a welcoming environment. Your smile is our priority. Trust us to care for your dental health.
+        </p>
+<div class="flex flex-col gap-4 mb-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-soft text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-[15px] font-medium text-text-dark">Experienced and Caring Team of Professionals</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-soft text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-[15px] font-medium text-text-dark">Advanced Technology for Optimal Care Solutions</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-soft text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-[15px] font-medium text-text-dark">A Wide Range of Services to Meet All Your Needs</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-soft text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-main text-[15px] font-medium text-text-dark">Personalized Care Approaches for Each Patient</span>
+</div>
+</div>
+<button class="px-[36px] h-[48px] rounded-full bg-primary-container text-white font-label-sm hover:bg-primary-dark transition-colors duration-180 w-max">
+            Learn More
+        </button>
+</div>
+</div>
+</section>
+<!-- 5. Dental Team Section -->
+<section class="bg-[#326BFF] pt-[90px] pb-[100px] px-8 md:px-16">
+<h2 class="font-section-heading text-[42px] text-white text-center mx-auto max-w-[620px] mb-16">Our Dental Team is Ready to Assist You</h2>
+<div class="max-w-[1040px] mx-auto flex flex-col md:flex-row items-end justify-center gap-8 md:gap-6">
+<!-- Dr. Ralph Edwards (Left) -->
+<div class="flex flex-col items-center w-full md:w-[300px]">
+<div class="bg-white/10 rounded-[24px] w-full aspect-[4/5] relative overflow-hidden mb-4 border border-white/10">
+<img alt="Dr. Ralph Edwards" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZVvPrCFe7RKufWpEaA-TgUSj3XYypxWLZLT7aYFmwqozm4qZXqjkQJfnvxdpbwxropYzLX3lH6PMdN7boi5SneCIG7ZHXG6ZnBpN1tW7eFGI8IslyuF9ICquqNy4ObvPDPbR3n3V8TXE2Q8hHUEDOQpGJPvQCpQKZUHXlCCRdtcg0JCPI9lby5Fg-pqoDzQOXQFY3pkg245M_NHQ6HkFyKx4EoWvQa5a6G5bXe_8mifJDdiUDZA_G763yEpmgBUn8Egz_Nr7MPA" style="object-position: center;"/>
+</div>
+<div class="text-center">
+<h3 class="font-card-title text-white text-[20px] font-bold">Dr. Ralph Edwards</h3>
+<p class="font-body-main text-white/70 text-[14px]">Dental Surgeon</p>
+</div>
+</div>
+<!-- Dr. Shelley Robinson (Center - Larger) -->
+<div class="flex flex-col items-center w-full md:w-[380px] z-10">
+<div class="bg-[#16C7EB] rounded-[24px] w-full aspect-[4/5] relative overflow-hidden mb-4 shadow-xl">
+<img alt="Dr. Shelley Robinson" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnzDb_XRd9o4IhknZyWRaoeuJI9oWg9PceOqadsLdJ90VeLZWhiiX0Hoo48CmFkW_ngYiJV8OW2uyxwg4hqr4u5Rnx14fdwtxD174FAZZOqcr-EqTDhGL6nDMc8AyLP73j87BonSf543CWwEllSvinbl9YbfTYuQEMMd6XjaC5SZ_r4dUrbSiQwNRkv8eKnHMk8eGzR0tJTj0H2jLXi_L8jrKh79y9Qqr9bqm28isWWZvnOfRv8LG9eX1fPMvxpBnaEpyZqx4USg" style="object-position: center;"/>
+</div>
+<div class="text-center">
+<h3 class="font-card-title text-white text-[22px] font-bold">Dr. Shelley Robinson</h3>
+<p class="font-body-main text-white/70 text-[15px]">Dental Surgeon</p>
+</div>
+</div>
+<!-- Dr. Nicola Lester (Right) -->
+<div class="flex flex-col items-center w-full md:w-[300px]">
+<div class="bg-white/10 rounded-[24px] w-full aspect-[4/5] relative overflow-hidden mb-4 border border-white/10">
+<img alt="Dr. Nicola Lester" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI49-MDdB5NUyK_sLItbRH0A0lIfO3YnjDjSH0fz2VHl3MG_tqmaDeTs0vFov5CQq2GCMnJtOWzGwZnflK42a6imXqCpu-pI60tahtA0uX4TE5oMLuFTt83rwZY-ciE-EwfrDpWC9WVxXQlmFMBUS4gNppysg5Xu0CoyYZdMUvhYh4VWNfk1S5mdQZbhE7_aVtadZFvsqC9UzMve5VEJOGQMBJdcsqyHc1vJvOcvWgvkhlf55MX4wFpjsWBV1WMSlm4yg4NmyvNw" style="object-position: center;"/>
+</div>
+<div class="text-center">
+<h3 class="font-card-title text-white text-[20px] font-bold">Dr. Nicola Lester</h3>
+<p class="font-body-main text-white/70 text-[14px]">Dental Surgeon</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Testimonials Section -->
+<section class="bg-[#F4F8FF] py-[90px] px-8 md:px-16">
+<div class="max-w-[1040px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
+<div class="md:col-span-4">
+<h2 class="font-section-heading text-[42px] text-text-dark mb-4">What Patients Are Saying</h2>
+<p class="font-body-main text-text-muted mb-8">Hear from patients who trust Smile Bright for comfortable care and lasting results.</p>
+<div class="bg-primary-container rounded-[16px] p-6 w-full max-w-[280px] h-[110px] flex items-center gap-4 text-white">
+<div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white">star</span>
+</div>
+<div>
+<div class="font-hero-heading text-3xl font-extrabold">4.9</div>
+<div class="font-label-sm text-[13px] opacity-90">Care quality</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 columns-1 sm:columns-2 gap-6 space-y-6">
+<!-- Testimonial 1 -->
+<div class="bg-white rounded-[18px] p-[28px] shadow-[0_10px_30px_rgba(27,55,100,0.06)] break-inside-avoid">
+<span class="material-symbols-outlined text-primary-container text-3xl float-right">format_quote</span>
+<div class="flex gap-1 mb-2">
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-card-title text-[18px] text-text-dark mb-3">Alexander Harris</h4>
+<p class="font-body-main text-text-muted text-[14px]">The team made my visit comfortable and stress free. Everything felt modern, clean, and professional.</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white rounded-[18px] p-[28px] shadow-[0_10px_30px_rgba(27,55,100,0.06)] break-inside-avoid">
+<span class="material-symbols-outlined text-primary-container text-3xl float-right">format_quote</span>
+<div class="flex gap-1 mb-2">
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-card-title text-[18px] text-text-dark mb-3">Emily Williams</h4>
+<p class="font-body-main text-text-muted text-[14px]">I was nervous before my appointment, but the dentist explained every step and made me feel at ease.</p>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white rounded-[18px] p-[28px] shadow-[0_10px_30px_rgba(27,55,100,0.06)] break-inside-avoid">
+<span class="material-symbols-outlined text-primary-container text-3xl float-right">format_quote</span>
+<div class="flex gap-1 mb-2">
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-card-title text-[18px] text-text-dark mb-3">Samuel Walker</h4>
+<p class="font-body-main text-text-muted text-[14px]">Great care, friendly staff, and excellent results. My smile looks brighter than ever.</p>
+</div>
+<!-- Testimonial 4 -->
+<div class="bg-white rounded-[18px] p-[28px] shadow-[0_10px_30px_rgba(27,55,100,0.06)] break-inside-avoid">
+<span class="material-symbols-outlined text-primary-container text-3xl float-right">format_quote</span>
+<div class="flex gap-1 mb-2">
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-cyan-soft text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-card-title text-[18px] text-text-dark mb-3">Matthew Lewis</h4>
+<p class="font-body-main text-text-muted text-[14px]">Best dental experience I've had. Highly recommend this clinic to anyone looking for professional care.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Large Blue Statement CTA Section -->
+<section class="bg-primary-container py-[88px] px-[80px]">
+<div class="max-w-[980px] mx-auto text-center">
+<h2 class="font-hero-heading text-[36px] md:text-[50px] leading-[1.2] text-white">
+                Step Into A World Of <img alt="Dental Service" class="inline-block w-[120px] h-[44px] rounded-full object-cover mx-2 align-middle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy8QpncHHaG8_Jt_799MidhW6Dl-emfqOPG6bpuFJlq2wzihGU6bKcZfAYpLUNiRI0tDpJ5RPZB_3zS4B7J7X-LTr28yum_poBnJSNAP94w9Z3FEwf96PuRX0ZDLMaqvhd9N8M7lDljEr2oLapJu6rUO9xhP6e7LfZqSJRrV506s8s_64q5IV5cXWELo4OVt1n4T7F27ZVKxq4v4QzzhJgGjJtOTJM5dnZqSXcWyP8PWMqUePfHfHztIz6r-NYlHOxSHMFGibx8g"/> Brighter Smiles <img alt="Avatar" class="inline-block w-[42px] h-[42px] rounded-full object-cover mx-2 align-middle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpNUHflS7apVO7ISy5eaKw_tRR5rSKgyQ-qk-u5TUBmlX6aBHMZ-Q5Adi_mB2XRB6w9v7NwiCjPfzMgQNi_Tpq-Yt82I6F6JMUFHC5iv2mEz1QF7kgCgNhJm27sMTVUgj1ubSVerWGyI2Gy2lH5WpfrtL4zVRSWkPWKtqNomgvZJcAJcvy5nxsd4lW3N3CvtljXaQp-_TdyJlOFqciCKN23u4i1Nf9Z6BNX7N98bco1VoU4bqrWw_CIKwvXgqaRs6ka0Q_GXtRBg"/> With Our Professional Dental Care Services. Our Team Is Dedicated To Providing <img alt="Dental Care" class="inline-block w-[120px] h-[44px] rounded-full object-cover mx-2 align-middle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIYN9XsgIrZ5fyesbnGPf8AkEnFJ6995RdbYt2qsU29s2Nt6N0ABJV3FuIKlAyxy8HPWdHpu6XyLq6EmvU6X3w-0bud6zCx-1WzkQrPkeNxjFE_toQQmCt72GXzotcjDXWtJay_KtZvAet21QUXDdGcDxfIbBc4ZsFFNC5UNQfbeQO0h7nlqP-nwuLYniGcdmmQUHo-A137afnjtY-GIKy-ud37NWlrqmKXzhKSS99f6U2Ni2IX-uUW-TH__PyAqRvkTI7OlXSkg"/> Exceptional Dental Care Services.
+            </h2>
+</div>
+</section>
+<!-- 8. FAQ Section -->
+<section class="bg-white pt-[88px] pb-[100px] px-8 md:px-16">
+<div class="text-center mb-12">
+<h2 class="font-section-heading text-[42px] text-text-dark mb-4">Frequently Asked<br/>Questions</h2>
+<p class="font-body-main text-text-muted">Find quick answers to common dental care questions before your visit.</p>
+</div>
+<div class="max-w-[1040px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40px] items-start">
+<img alt="Dental Treatment" class="w-full h-[360px] md:h-[500px] object-cover rounded-[18px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYZIll7dw9RB0LFub2bGXEasxBofnD1mxMGXeaxxRQdKURcpnEUvwoFWOt0KZxqY3k0Jxcey3PgscCnWTK6VKFeg4u68iLuOh81kh7JIfpNSnHqbBYrote8raDVbVJlX8I5sPVfpwNr8thWty2IEZZ7JJn7vVK6scWietRihC2gMr36Qfm9KQdB_av45uD0NnVK_u2TKNmhYVZIwZOI3rAPgfH5Yjdcol2W_L0cdNxrpd4poDvmfl9DqL08S35QGGsUIHUSZoOFQ"/>
+<div class="space-y-4 w-full max-w-[520px]">
+<!-- FAQ 1 (Open) -->
+<div class="bg-primary-container rounded-[18px] p-6 text-white shadow-sm">
+<div class="flex justify-between items-center mb-3">
+<h4 class="font-card-title text-[18px]">What is the fastest way to schedule my visit?</h4>
+<span class="material-symbols-outlined">remove</span>
+</div>
+<p class="font-body-main text-[15px] opacity-90">You can contact us directly or book an appointment online. Our team will help you choose the earliest available slot and prepare for your visit.</p>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-white rounded-[18px] p-6 text-text-dark shadow-[0_10px_30px_rgba(27,55,100,0.06)] flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">dentistry</span>
+<h4 class="font-card-title text-[18px]">How do I know if I need braces or Invisalign?</h4>
+</div>
+<span class="material-symbols-outlined text-text-muted">add</span>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-white rounded-[18px] p-6 text-text-dark shadow-[0_10px_30px_rgba(27,55,100,0.06)] flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">dentistry</span>
+<h4 class="font-card-title text-[18px]">How do I know if I need a root canal?</h4>
+</div>
+<span class="material-symbols-outlined text-text-muted">add</span>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-white rounded-[18px] p-6 text-text-dark shadow-[0_10px_30px_rgba(27,55,100,0.06)] flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">dentistry</span>
+<h4 class="font-card-title text-[18px]">What should I do if I have a toothache?</h4>
+</div>
+<span class="material-symbols-outlined text-text-muted">add</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 9. Emergency Dentist CTA + Footer -->
+<footer class="bg-primary-container pt-[80px] pb-[64px] px-8 md:px-16 relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto relative z-10">
+<!-- Emergency CTA -->
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-[70px]">
+<div>
+<h2 class="font-section-heading text-[42px] text-white mb-2">Need an Emergency<br/>Dentist?</h2>
+<p class="font-body-main text-white/90 max-w-[500px]">Call our team for urgent dental support. We provide quick guidance and priority appointments whenever possible.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-[28px] h-[46px] rounded-full bg-cyan-soft text-white font-label-sm hover:bg-cyan transition-colors">Contact Us</button>
+<button class="px-[28px] h-[46px] rounded-full border border-white text-white font-label-sm hover:bg-white/10 transition-colors">View Services</button>
+</div>
+</div>
+<div class="h-px bg-white/10 w-full mb-[70px]"></div>
+<!-- Footer Columns -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<!-- Col 1 -->
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-cyan-soft text-3xl" style="font-variation-settings: 'FILL' 1;">dentistry</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[24px] font-bold text-white">Smile Bright</span>
+</div>
+<div class="flex gap-4 mb-6">
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" href="#"><span class="material-symbols-outlined text-sm">flutter_dash</span></a>
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" href="#"><span class="material-symbols-outlined text-sm">camera_alt</span></a>
+<a class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" href="#"><span class="material-symbols-outlined text-sm">work</span></a>
+</div>
+<p class="font-body-main text-[14px] text-white/70">© 2026 Smile Bright. All Rights Reserved.</p>
+</div>
+<!-- Col 2 -->
+<div>
+<h4 class="font-card-title text-[18px] text-white mb-6">Smile Bright Clinic</h4>
+<ul class="space-y-4 font-body-main text-[15px] text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Our Services</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Testimonials</a></li>
+<li><a class="hover:text-white transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div>
+<h4 class="font-card-title text-[18px] text-white mb-6">Contact</h4>
+<ul class="space-y-4 font-body-main text-[15px] text-white/70">
+<li>+1 234 567 8900</li>
+<li>smilebright@email.com</li>
+<li>123 Dental Street, New York</li>
+<li>Mon - Sat: 9AM - 9PM</li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div>
+<h4 class="font-card-title text-[18px] text-white mb-6">Helpful Links</h4>
+<ul class="space-y-4 font-body-main text-[15px] text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">Oral Health</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Large Wordmark -->
+<div class="absolute bottom-[-10%] left-1/2 transform -translate-x-1/2 w-full text-center pointer-events-none select-none">
+<span class="font-hero-heading text-[12vw] font-black text-white opacity-5 whitespace-nowrap">Smile Bright</span>
+</div>
+</footer></div></body></html>

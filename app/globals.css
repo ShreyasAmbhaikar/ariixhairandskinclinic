@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-bg: #fefcff;
+  --white: #fefcff;
+  --primary-blue: #a55308;
+  --primary-blue-dark: #7f3e04;
+  --cyan: #e57f1b;
+  --cyan-soft: #f9a137;
+  --dark-text: #5a2f0b;
+  --muted-text: #6a472a;
+  --light-section: #fff6ea;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #7B4BB8 #FDF8FF;
+}
+
+/* Custom scrollbar styles matching site theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF8FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7B4BB8;
+  border-radius: 9999px;
+  border: 2px solid #FDF8FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5B2D8E;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: var(--white);
+  color: var(--dark-text);
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  font-synthesis-weight: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 88px;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.canvas-wrapper {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: none;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  border-radius: 9999px;
+  background: var(--primary-blue);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transform: translateY(-140%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Commented out to eliminate layout shifts (CLS) caused by content-visibility: auto's hardcoded placeholder height */
+/* @supports (content-visibility: auto) {
+  .deferred-section {
+    content-visibility: auto;
+    contain-intrinsic-size: 900px;
+  }
+} */
+
+.rotating-badge {
+  animation: spin 15s linear infinite;
+}
+
+.tooth-float {
+  animation: toothFloat 3s ease-in-out infinite;
+}
+
+.about-bounce {
+  animation: aboutBounce 4.4s ease-in-out infinite;
+}
+
+.faq-minus {
+  display: none;
+}
+
+details[open] .faq-plus {
+  display: none;
+}
+
+details[open] .faq-minus {
+  display: block;
+}
+
+.before-after-range {
+  appearance: none;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+.before-after-range:focus {
+  outline: none;
+}
+
+.before-after-range:focus-visible {
+  outline: 3px solid rgba(249, 161, 55, 0.85);
+  outline-offset: -6px;
+}
+
+.before-after-range::-webkit-slider-runnable-track {
+  height: 100%;
+  background: transparent;
+}
+
+.before-after-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+}
+
+.before-after-range::-moz-range-track {
+  height: 100%;
+  background: transparent;
+}
+
+.before-after-range::-moz-range-thumb {
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+}
+
+@keyframes toothFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes aboutBounce {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
