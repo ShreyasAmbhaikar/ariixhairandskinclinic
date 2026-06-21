@@ -132,10 +132,16 @@ export function createTreatmentMetadata(data: TreatmentPageData): Metadata {
   const heroImageAbsolute = new URL(data.heroImage, siteConfig.url).toString();
 
   return {
-    title: data.metaTitle,
+    title: {
+      absolute: data.metaTitle
+    },
     description: data.metaDescription,
     alternates: {
-      canonical: pageUrl
+      canonical: pageUrl,
+      languages: {
+        "en-IN": pageUrl,
+        "x-default": pageUrl
+      }
     },
     openGraph: {
       title: data.ogTitle,

@@ -9,10 +9,16 @@ import {
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: `Contact ${siteConfig.name} for appointments and skin & hair treatments in Pune.`,
+  title: {
+    absolute: "Contact Us | Ariix Hair & Skin Clinic"
+  },
+  description: "Contact Ariix Clinic in Kharadi & Sinhagad Road, Pune. Book your consultation for hair transplant, laser & skin treatments.",
   alternates: {
-    canonical: `${siteConfig.url}/contact-us/`
+    canonical: `${siteConfig.url}/contact-us/`,
+    languages: {
+      "en-IN": `${siteConfig.url}/contact-us/`,
+      "x-default": `${siteConfig.url}/contact-us/`
+    }
   }
 };
 
@@ -20,9 +26,40 @@ export default function ContactUsPage() {
   const kharadi = siteConfig.locations[0];
   const sinhagad = siteConfig.locations[1];
   const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
+  const pageUrl = `${siteConfig.url}/contact-us/`;
+
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": `${siteConfig.url}/contact-us/#webpage`,
+      "url": pageUrl,
+      "name": "Contact Ariix Hair & Skin Clinic",
+      "description": "Get in touch with Ariix Hair and Skin Clinic in Kharadi & Sinhagad Road, Pune. Book your consultation for hair transplant, laser & skin treatments."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${siteConfig.url}/best-skin-care-clinic-in-pune/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact Us",
+          "item": pageUrl
+        }
+      ]
+    }
+  ];
 
   return (
-    <main id="main-content" className="relative overflow-hidden bg-gradient-to-tr from-[#F3EEFF] via-[#FDF8FF] to-[#FFF0F7] px-4 pb-20 pt-[96px] sm:px-6 md:px-14 md:pb-24 md:pt-[120px]">
+    <>
+      <main id="main-content" className="relative overflow-hidden bg-gradient-to-tr from-[#F3EEFF] via-[#FDF8FF] to-[#FFF0F7] px-4 pb-20 pt-[96px] sm:px-6 md:px-14 md:pb-24 md:pt-[120px]">
       {/* Ambient gradient orbs for colorful premium look */}
       <div className="absolute top-[15%] left-[-15%] h-[450px] w-[450px] rounded-full bg-[var(--purple-light)]/25 blur-[120px] pointer-events-none" />
       <div className="absolute top-[60%] right-[-15%] h-[500px] w-[500px] rounded-full bg-[var(--mauve-light)]/15 blur-[130px] pointer-events-none" />
@@ -209,5 +246,15 @@ export default function ContactUsPage() {
         </div>
       </section>
     </main>
+    {schemas.map((schema, i) => (
+      <script
+        key={i}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c")
+        }}
+      />
+    ))}
+  </>
   );
 }

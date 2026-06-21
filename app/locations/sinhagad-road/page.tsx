@@ -5,16 +5,104 @@ import { siteConfig } from "@/lib/site-config";
 const locationData = siteConfig.locations.find((l) => l.slug === "sinhagad-road")!;
 
 export const metadata: Metadata = {
-  title: `Best Dermatologist on Sinhagad Road Anand Nagar | Ariix Hair and Skin Clinic`,
-  description: `Visit Ariix Hair and Skin Clinic at Sinhagad Road (Manikbag), Pune. Open Mon-Sat with convenient timings for hair transplant, PRP, acne, and laser treatments.`,
+  title: {
+    absolute: "Dermatologist on Sinhagad Road | Ariix Clinic"
+  },
+  description: "Visit Ariix Clinic on Sinhagad Road (Manikbag), Pune. Dermatologist-led hair transplants, laser hair removal & acne treatments. Book now!",
   alternates: {
-    canonical: `${siteConfig.url}/locations/sinhagad-road/`
+    canonical: `${siteConfig.url}/locations/sinhagad-road/`,
+    languages: {
+      "en-IN": `${siteConfig.url}/locations/sinhagad-road/`,
+      "x-default": `${siteConfig.url}/locations/sinhagad-road/`
+    }
   }
 };
 
 export default function SinhagadRoadLocationPage() {
+  const pageUrl = `${siteConfig.url}/locations/sinhagad-road/`;
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "DermatologyClinic",
+      "@id": `${siteConfig.url}/locations/sinhagad-road/#clinic`,
+      "name": `${siteConfig.name} - Sinhagad Road Branch`,
+      "url": pageUrl,
+      "logo": `${siteConfig.url}/images/logo-symbol.webp`,
+      "image": `${siteConfig.url}/images/logo-symbol.webp`,
+      "description": `Visit Ariix Hair and Skin Clinic at Sinhagad Road (Manikbag), Pune. Open Mon-Sat with convenient timings for hair transplant, PRP, acne, and laser treatments.`,
+      "telephone": locationData.phone,
+      "email": siteConfig.email,
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": locationData.address.streetAddress,
+        "addressLocality": locationData.address.addressLocality,
+        "addressRegion": locationData.address.addressRegion,
+        "postalCode": locationData.address.postalCode,
+        "addressCountry": locationData.address.addressCountry
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": locationData.geo.latitude,
+        "longitude": locationData.geo.longitude
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:30",
+          "closes": "14:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "17:30",
+          "closes": "21:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": locationData.reviews.rating,
+        "reviewCount": locationData.reviews.count
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${siteConfig.url}/best-skin-care-clinic-in-pune/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sinhagad Road Branch",
+          "item": pageUrl
+        }
+      ]
+    }
+  ];
+
   return (
-    <main id="main-content" className="relative overflow-hidden bg-[var(--cream)] px-[5vw] pb-24 pt-[96px] md:px-[8vw] md:pb-32 md:pt-[120px]">
+    <>
+      <main id="main-content" className="relative overflow-hidden bg-[var(--cream)] px-[5vw] pb-24 pt-[96px] md:px-[8vw] md:pb-32 md:pt-[120px]">
       {/* Background ambient orbs */}
       <div className="pointer-events-none absolute top-[10%] left-[-10%] h-[400px] w-[400px] rounded-full bg-[var(--purple-light)]/15 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-[10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-[var(--mauve)]/10 blur-[150px]" />
@@ -171,5 +259,15 @@ export default function SinhagadRoadLocationPage() {
         </div>
       </div>
     </main>
+    {schemas.map((schema, i) => (
+      <script
+        key={i}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c")
+        }}
+      />
+    ))}
+  </>
   );
 }

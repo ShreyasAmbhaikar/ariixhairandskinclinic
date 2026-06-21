@@ -5,10 +5,16 @@ import { BadgeCheck, Heart, Sparkles } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: `Learn more about ${siteConfig.name}.`,
+  title: {
+    absolute: "About Dr. Abhimanyu Jagtap | Ariix Clinic"
+  },
+  description: "Learn about Ariix Hair and Skin Clinic in Pune. Meet Dr. Abhimanyu Jagtap, our senior specialist, and discover our patient-first approach.",
   alternates: {
-    canonical: `${siteConfig.url}/about/`
+    canonical: `${siteConfig.url}/about/`,
+    languages: {
+      "en-IN": `${siteConfig.url}/about/`,
+      "x-default": `${siteConfig.url}/about/`
+    }
   }
 };
 
@@ -37,8 +43,50 @@ const pillars = [
 
 /* ─────────── page ─────────── */
 export default function AboutPage() {
+  const pageUrl = `${siteConfig.url}/about/`;
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": `${siteConfig.url}/about/#webpage`,
+      "url": pageUrl,
+      "name": "About Ariix Hair & Skin Clinic",
+      "description": "Learn more about Ariix Hair and Skin Clinic in Pune. Meet Dr. Abhimanyu Jagtap, our senior specialist, and discover our patient-first approach.",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Dr. Abhimanyu Jagtap",
+        "jobTitle": "Skin, Hair & Laser Specialist",
+        "description": "Dr. Abhimanyu Jagtap brings more than 8 years of experience in advanced dermatology and aesthetic medicine with a strong focus on hair transplants, PRP therapy, laser treatments, and patient-first care.",
+        "worksFor": {
+          "@type": "DermatologyClinic",
+          "name": "Ariix Hair and Skin Clinic",
+          "url": siteConfig.url
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${siteConfig.url}/best-skin-care-clinic-in-pune/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": pageUrl
+        }
+      ]
+    }
+  ];
+
   return (
-    <main id="main-content" className="overflow-hidden bg-[var(--cream)] pt-[96px] md:pt-[120px]">
+    <>
+      <main id="main-content" className="overflow-hidden bg-[var(--cream)] pt-[96px] md:pt-[120px]">
 
       {/* ══════════════════════════════════════════
           1. HERO — split layout
@@ -169,5 +217,15 @@ export default function AboutPage() {
       </section>
 
     </main>
+    {schemas.map((schema, i) => (
+      <script
+        key={i}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c")
+        }}
+      />
+    ))}
+  </>
   );
 }

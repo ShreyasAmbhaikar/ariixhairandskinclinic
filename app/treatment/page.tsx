@@ -2,18 +2,60 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig, categorizedTreatments } from "@/lib/site-config";
 export const metadata: Metadata = {
-  title: "Our Treatments",
-  description: `Explore treatment pages at ${siteConfig.name}.`,
+  title: {
+    absolute: "Skin, Hair & Laser Treatments | Ariix Clinic"
+  },
+  description: "Explore advanced skin, hair, and laser treatments by Dr. Abhimanyu Jagtap at Ariix Hair & Skin Clinic in Pune. Book a consult!",
   alternates: {
-    canonical: `${siteConfig.url}/treatment/`
+    canonical: `${siteConfig.url}/treatment/`,
+    languages: {
+      "en-IN": `${siteConfig.url}/treatment/`,
+      "x-default": `${siteConfig.url}/treatment/`
+    }
   }
 };
 export default function OurServicesPage() {
+  const pageUrl = `${siteConfig.url}/treatment/`;
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/treatment/#webpage`,
+      "url": pageUrl,
+      "name": "Skin, Hair & Laser Treatments in Pune - Ariix Clinic",
+      "description": "Explore the wide range of advanced skin, hair, and laser treatments offered by Dr. Abhimanyu Jagtap at Ariix Hair and Skin Clinic in Pune.",
+      "about": {
+        "@type": "DermatologyClinic",
+        "name": "Ariix Hair and Skin Clinic",
+        "url": siteConfig.url
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${siteConfig.url}/best-skin-care-clinic-in-pune/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Treatments",
+          "item": pageUrl
+        }
+      ]
+    }
+  ];
+
   return (
-    <main
-      id="main-content"
-      className="relative overflow-hidden bg-[var(--cream)] px-[5vw] pb-24 pt-[96px] md:px-[8vw] md:pb-32 md:pt-[120px]"
-    >
+    <>
+      <main
+        id="main-content"
+        className="relative overflow-hidden bg-[var(--cream)] px-[5vw] pb-24 pt-[96px] md:px-[8vw] md:pb-32 md:pt-[120px]"
+      >
       {/* Ambient background orbs */}
       <div className="pointer-events-none absolute top-[6%] left-[-8%] h-[500px] w-[500px] rounded-full bg-[var(--purple-light)]/12 blur-[130px]" />
       <div className="pointer-events-none absolute top-[45%] right-[-10%] h-[600px] w-[600px] rounded-full bg-[var(--mauve)]/8 blur-[160px]" />
@@ -112,5 +154,15 @@ export default function OurServicesPage() {
         </div>
       </section>
     </main>
+    {schemas.map((schema, i) => (
+      <script
+        key={i}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c")
+        }}
+      />
+    ))}
+  </>
   );
 }

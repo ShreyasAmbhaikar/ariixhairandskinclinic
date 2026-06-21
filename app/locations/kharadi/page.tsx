@@ -5,16 +5,84 @@ import { siteConfig } from "@/lib/site-config";
 const locationData = siteConfig.locations.find((l) => l.slug === "kharadi")!;
 
 export const metadata: Metadata = {
-  title: `Best Dermatologist in Kharadi Wagholi | Ariix Hair and Skin Clinic`,
-  description: `Visit Ariix Hair and Skin Clinic at Kharadi (Wagholi), Pune. Open Sundays from 12 PM to 8 PM for advanced hair transplants, PRP, acne, and laser treatments.`,
+  title: {
+    absolute: "Dermatologist in Kharadi Wagholi | Ariix Clinic"
+  },
+  description: "Visit Ariix Clinic in Kharadi (Wagholi), Pune. Sunday-only consultations for hair transplant, PRP, acne & laser treatments. Book now!",
   alternates: {
-    canonical: `${siteConfig.url}/locations/kharadi/`
+    canonical: `${siteConfig.url}/locations/kharadi/`,
+    languages: {
+      "en-IN": `${siteConfig.url}/locations/kharadi/`,
+      "x-default": `${siteConfig.url}/locations/kharadi/`
+    }
   }
 };
 
 export default function KharadiLocationPage() {
+  const pageUrl = `${siteConfig.url}/locations/kharadi/`;
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "DermatologyClinic",
+      "@id": `${siteConfig.url}/locations/kharadi/#clinic`,
+      "name": `${siteConfig.name} - Kharadi Branch`,
+      "url": pageUrl,
+      "logo": `${siteConfig.url}/images/logo-symbol.webp`,
+      "image": `${siteConfig.url}/images/logo-symbol.webp`,
+      "description": `Visit Ariix Hair and Skin Clinic at Kharadi (Wagholi), Pune. Open Sundays from 12 PM to 8 PM for advanced hair transplants, PRP, acne, and laser treatments.`,
+      "telephone": locationData.phone,
+      "email": siteConfig.email,
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": locationData.address.streetAddress,
+        "addressLocality": locationData.address.addressLocality,
+        "addressRegion": locationData.address.addressRegion,
+        "postalCode": locationData.address.postalCode,
+        "addressCountry": locationData.address.addressCountry
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": locationData.geo.latitude,
+        "longitude": locationData.geo.longitude
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "12:00",
+          "closes": "20:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": locationData.reviews.rating,
+        "reviewCount": locationData.reviews.count
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${siteConfig.url}/best-skin-care-clinic-in-pune/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kharadi Branch",
+          "item": pageUrl
+        }
+      ]
+    }
+  ];
+
   return (
-    <main id="main-content" className="relative overflow-hidden bg-[var(--cream)] px-[5vw] pb-24 pt-[96px] md:px-[8vw] md:pb-32 md:pt-[120px]">
+    <>
+      <main id="main-content" className="relative overflow-hidden bg-[var(--cream)] px-[5vw] pb-24 pt-[96px] md:px-[8vw] md:pb-32 md:pt-[120px]">
       {/* Background ambient orbs */}
       <div className="pointer-events-none absolute top-[10%] left-[-10%] h-[400px] w-[400px] rounded-full bg-[var(--purple-light)]/15 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-[10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-[var(--mauve)]/10 blur-[150px]" />
@@ -167,5 +235,15 @@ export default function KharadiLocationPage() {
         </div>
       </div>
     </main>
+    {schemas.map((schema, i) => (
+      <script
+        key={i}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c")
+        }}
+      />
+    ))}
+  </>
   );
 }

@@ -2,9 +2,9 @@ import type { TreatmentPageData } from "@/components/treatment/treatment-page";
 
 export const hairTransplantTreatment: TreatmentPageData = {
   pagePath: "/hair-transplant/",
-  metaTitle: "Best Hair Transplant in Pune | Hair Transplant Cost near me",
+  metaTitle: "Best Hair Transplant in Pune | Hair Transplant Cost",
   metaDescription:
-    "Consult Dr. Abhimanyu Jagtap (MD (Dermatology)) at Ariix Hair and Skin Clinic — Pune's trusted FUE hair transplant clinic at Kharadi & Sinhagad Road. 90–95% graft survival. Permanent results. Book now!",
+    "Dermatologist-led FUE hair transplant in Pune at Ariix Clinic (Kharadi & Sinhagad Road). 90-95% graft survival. Book your consultation today!",
   ogTitle: "Advanced FUE Hair Transplant in Pune | Ariix Clinic",
   ogDescription:
     "Restore your hair density with safe, dermatologist-led FUE hair transplant treatments at our Kharadi & Sinhagad Road branches in Pune. Affordable pricing.",
@@ -154,9 +154,9 @@ export const hairTransplantTreatment: TreatmentPageData = {
 
 export const prpHairTreatment: TreatmentPageData = {
   pagePath: "/prp-hair-treatment/",
-  metaTitle: "PRP Hair Treatment in Pune | Non-Surgical Hair Regrowth Cost near me",
+  metaTitle: "PRP Hair Treatment in Pune | Hair Regrowth Cost",
   metaDescription:
-    "Consult Dr. Abhimanyu Jagtap at Ariix Hair and Skin Clinic for clinically administered PRP hair therapy in Pune. Non-surgical, zero downtime, natural regrowth at Kharadi & Sinhagad Road. Book now!",
+    "Restore thinning hair naturally with expert PRP hair treatment at Ariix Clinic in Pune. Safe, clinical growth factor therapy. Book a consult!",
   ogTitle: "PRP Hair Treatment in Pune | Ariix Clinic",
   ogDescription:
     "Stimulate hair growth naturally with doctor-led PRP hair therapy at Ariix Clinic. Convenient branches at Kharadi & Sinhagad Road, Pune. Affordable session packages.",
@@ -306,9 +306,9 @@ export const prpHairTreatment: TreatmentPageData = {
 
 export const hairLossTreatment: TreatmentPageData = {
   pagePath: "/hair-loss-treatment/",
-  metaTitle: "Best Hair Loss Treatment in Pune | Hair Fall Doctor near me",
+  metaTitle: "Best Hair Loss Treatment in Pune | Hair Fall Doctor",
   metaDescription:
-    "Searching for the best hair loss treatment near me? Ariix Hair and Skin Clinic on Sinhagad Road & Kharadi offers expert, dermatologist-led hair fall therapies at affordable costs. Book now!",
+    "Stop hair fall and reverse thinning with dermatologist-led hair loss treatments at Ariix Clinic (Kharadi & Sinhagad Road). Book your analysis!",
   ogTitle: "Advanced Hair Loss & Hair Fall Treatment in Pune | Ariix Clinic",
   ogDescription:
     "Consult our expert dermatologist for clinically proven hair loss treatments at Kharadi & Sinhagad Road, Pune. Comprehensive diagnostics, PRP, and hair fall therapies.",
@@ -458,9 +458,9 @@ export const hairLossTreatment: TreatmentPageData = {
 
 export const hairFallTreatment: TreatmentPageData = {
   pagePath: "/hair-fall-treatment/",
-  metaTitle: "Sudden Hair Fall Treatment in Pune | Telogen Effluvium & Acute Shedding Doctor",
+  metaTitle: "Hair Fall Treatment in Pune | Telogen Effluvium Care",
   metaDescription:
-    "Experiencing sudden or excessive hair fall in Pune? Dr. Abhimanyu Jagtap at Ariix Hair and Skin Clinic diagnoses and treats Telogen Effluvium, stress-induced shedding & acute hair fall at Kharadi & Sinhagad Road. Book now!",
+    "Clinical hair fall treatments by Dr. Abhimanyu Jagtap in Pune. Scientific trichoscopy diagnostics & targeted therapies for hair regrowth. Book now!",
   ogTitle: "Advanced Hair Fall Treatment in Pune | Ariix Clinic",
   ogDescription:
     "Restore your hair volume, control active shedding, and strengthen hair roots with customized medical protocols at our Pune clinics.",
@@ -762,9 +762,9 @@ export const beardTransplantTreatment: TreatmentPageData = {
 
 export const dandruffTreatment: TreatmentPageData = {
   pagePath: "/dandruff-treatment/",
-  metaTitle: "Best Dandruff Treatment in Pune | Dandruff Doctor near me",
+  metaTitle: "Best Dandruff Treatment in Pune | Dandruff Doctor",
   metaDescription:
-    "Suffering from dandruff, scalp flaking, or Seborrheic Dermatitis in Pune? Dr. Abhimanyu Jagtap at Ariix Hair and Skin Clinic offers clinical scalp peels, antifungal therapy & digital trichoscopy at Kharadi & Sinhagad Road. Book now!",
+    "Clear stubborn dandruff and itchy scalp with advanced dermatologist-led scalp peeling treatments at Ariix Clinic in Pune. Schedule your checkup!",
   ogTitle: "Dandruff Treatment & Scalp Peels in Pune | Ariix Clinic",
   ogDescription:
     "Get rid of stubborn dandruff, scalp flaking, and itching. Certified dermatologist-led scalp peeling and medical therapies at our Pune clinics.",
@@ -1467,8 +1467,9 @@ export const laserSkinRejuvenationTreatment: TreatmentPageData = {
 
 export const acneTreatment: TreatmentPageData = {
   pagePath: "/acne-treatment/",
-  metaTitle: "Best Acne Treatment in Pune | Pimple Treatment Cost near me",
-  metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective acne treatment in Pune. Clear active pimples safely at Kharadi & Sinhagad Road.",
+  metaTitle: "Best Acne Treatment in Pune | Pimple Treatment Cost",
+  metaDescription:
+    "Clear active pimples and prevent breakouts with dermatologist-led acne treatments & chemical peels at Ariix Clinic in Pune. Book a consultation!",
   ogTitle: "Acne & Pimple Treatment in Pune | Ariix Clinic",
   ogDescription: "Get rid of active pimples, whiteheads, and blackheads with doctor-led acne treatments at our Kharadi and Sinhagad Road clinics in Pune.",
   h1Lines: ["Acne Treatment", "in Pune"],
@@ -1604,8 +1605,9 @@ export const acneTreatment: TreatmentPageData = {
 
 export const acneScarTreatment: TreatmentPageData = {
   pagePath: "/acne-scar-treatment/",
-  metaTitle: "Best Acne Scar Treatment in Pune | Acne Scar Removal Cost near me",
-  metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for advanced laser acne scar treatment in Pune. Smooth deep scars at Kharadi & Sinhagad Road.",
+  metaTitle: "Acne Scar Treatment in Pune | Acne Scar Removal Cost",
+  metaDescription:
+    "Smooth deep acne scars with fractional CO2 laser & microneedling RF treatments at Ariix Clinic in Pune. Rebuild collagen. Book your consult!",
   ogTitle: "Acne Scar Removal in Pune | Ariix Clinic",
   ogDescription: "Restore your skin texture and fade deep acne scars with advanced Fractional CO2 laser and microneedling treatments at Ariix Clinic, Pune.",
   h1Lines: ["Acne Scar Treatment", "in Pune"],
@@ -1741,8 +1743,9 @@ export const acneScarTreatment: TreatmentPageData = {
 
 export const pigmentationTreatment: TreatmentPageData = {
   pagePath: "/pigmentation-treatment/",
-  metaTitle: "Best Pigmentation Treatment in Pune | Skin Pigmentation Treatment Cost near me",
-  metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective pigmentation treatment in Pune. Fade melasma & dark spots at Kharadi & Sinhagad Road.",
+  metaTitle: "Pigmentation Treatment in Pune | Melasma Treatment",
+  metaDescription:
+    "Fade melasma, dark spots, and hyperpigmentation with advanced chemical peels & laser treatments at Ariix Clinic in Pune. Schedule a checkup!",
   ogTitle: "Skin Pigmentation Treatment in Pune | Ariix Clinic",
   ogDescription: "Clear melasma, sun spots, and dark spots safely with advanced dermatologist-led pigmentation treatments at Ariix Clinic, Pune.",
   h1Lines: ["Pigmentation Treatment", "in Pune"],
@@ -1878,8 +1881,9 @@ export const pigmentationTreatment: TreatmentPageData = {
 
 export const darkCircleTreatment: TreatmentPageData = {
   pagePath: "/dark-circle-treatment/",
-  metaTitle: "Best Dark Circle Treatment in Pune | Under Eye Dark Circle Removal Cost near me",
-  metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective under eye dark circle removal in Pune at Kharadi & Sinhagad Road. Book now!",
+  metaTitle: "Dark Circle Treatment in Pune | Under Eye Laser Cost",
+  metaDescription:
+    "Reduce stubborn under-eye dark circles & hollows with customized peeling & laser toning treatments at Ariix Clinic in Pune. Book today!",
   ogTitle: "Dark Circle Treatment in Pune | Ariix Clinic",
   ogDescription: "Brighten tired eyes and fade under-eye dark circles with safe, doctor-led clinical treatments at our Kharadi and Sinhagad Road branches in Pune.",
   h1Lines: ["Dark Circle Treatment", "in Pune"],
@@ -2289,8 +2293,9 @@ export const skinTagRemovalTreatment: TreatmentPageData = {
 
 export const psoriasisTreatment: TreatmentPageData = {
   pagePath: "/psoriasis-treatment/",
-  metaTitle: "Best Psoriasis Treatment in Pune | Psoriasis Clinic near me",
-  metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for advanced psoriasis treatment in Pune. Control scaling & itching at Kharadi & Sinhagad Road.",
+  metaTitle: "Best Psoriasis Treatment in Pune | Psoriasis Clinic",
+  metaDescription:
+    "Manage psoriasis plaques, itching, and scaling with targeted medical & phototherapy treatments at Ariix Clinic in Pune. Book a consult today!",
   ogTitle: "Psoriasis Treatment in Pune | Ariix Clinic",
   ogDescription: "Manage psoriasis plaques, itching, and scaling with doctor-led medical treatments at Ariix Clinic, Pune (Kharadi and Sinhagad Road).",
   h1Lines: ["Psoriasis Treatment", "in Pune"],
@@ -2426,8 +2431,9 @@ export const psoriasisTreatment: TreatmentPageData = {
 
 export const vitiligoTreatment: TreatmentPageData = {
   pagePath: "/vitiligo-treatment/",
-  metaTitle: "Best Vitiligo Treatment in Pune | Vitiligo Doctor near me",
-  metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective vitiligo treatment in Pune. Regain skin pigment at Kharadi & Sinhagad Road.",
+  metaTitle: "Best Vitiligo Treatment in Pune | Vitiligo Doctor",
+  metaDescription:
+    "Regain skin pigment with advanced medical creams and phototherapy vitiligo treatments at Ariix Clinic in Pune. Consult our specialist today!",
   ogTitle: "Vitiligo Treatment in Pune | Ariix Clinic",
   ogDescription: "Restore skin pigment and manage vitiligo patches with doctor-led medical treatments at Ariix Clinic, Pune (Kharadi and Sinhagad Road).",
   h1Lines: ["Vitiligo Treatment", "in Pune"],
@@ -2563,8 +2569,9 @@ export const vitiligoTreatment: TreatmentPageData = {
 
 export const chemicalPeelTreatment: TreatmentPageData = {
   pagePath: "/chemical-peel-treatment/",
-  metaTitle: "Best Chemical Peel in Pune | Chemical Peel Treatment Cost near me",
-  metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for safe chemical peel in Pune. Brighten skin with salicylic & glycolic peels at Kharadi & Sinhagad Road.",
+  metaTitle: "Chemical Peel in Pune | Chemical Peel Treatment Cost",
+  metaDescription:
+    "Brighten skin and clear pores with custom salicylic, glycolic, and yellow chemical peels at Ariix Clinic in Pune. Book your session now!",
   ogTitle: "Chemical Peel Treatment in Pune | Ariix Clinic",
   ogDescription: "Exfoliate and brighten your skin with safe, dermatologist-administered chemical peels at our Kharadi and Sinhagad Road clinics in Pune.",
   h1Lines: ["Chemical Peel Treatment", "in Pune"],

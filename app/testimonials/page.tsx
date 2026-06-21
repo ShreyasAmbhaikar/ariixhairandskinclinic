@@ -4,10 +4,16 @@ import { Star } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Testimonials",
-  description: `Read patient reviews and testimonials for ${siteConfig.name} in Pune.`,
+  title: {
+    absolute: "Patient Reviews & Testimonials | Ariix Clinic"
+  },
+  description: "Read real success stories and reviews from patients who underwent hair transplant, laser & skin treatments at Ariix Clinic.",
   alternates: {
-    canonical: `${siteConfig.url}/testimonials/`
+    canonical: `${siteConfig.url}/testimonials/`,
+    languages: {
+      "en-IN": `${siteConfig.url}/testimonials/`,
+      "x-default": `${siteConfig.url}/testimonials/`
+    }
   }
 };
 
@@ -30,12 +36,48 @@ function getAvatarColor(name: string) {
 
 export default function TestimonialsPage() {
   const testimonials = siteConfig.testimonials;
+  const pageUrl = `${siteConfig.url}/testimonials/`;
+
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/testimonials/#webpage`,
+      "url": pageUrl,
+      "name": "Patient Reviews & Testimonials - Ariix Hair & Skin Clinic",
+      "description": "Read real reviews and success stories from patients who underwent hair transplant, laser hair removal, and skin treatments at Ariix Clinic.",
+      "reviewedBy": {
+        "@type": "DermatologyClinic",
+        "name": "Ariix Hair and Skin Clinic",
+        "url": siteConfig.url
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${siteConfig.url}/best-skin-care-clinic-in-pune/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Testimonials",
+          "item": pageUrl
+        }
+      ]
+    }
+  ];
 
   return (
-    <main
-      id="main-content"
-      className="relative overflow-hidden bg-gradient-to-b from-[var(--cream)] via-[#FAF3FF] to-[#F3EAFF] px-2.5 pb-20 pt-[96px] sm:px-6 md:px-14 md:pb-24 md:pt-[120px]"
-    >
+    <>
+      <main
+        id="main-content"
+        className="relative overflow-hidden bg-gradient-to-b from-[var(--cream)] via-[#FAF3FF] to-[#F3EAFF] px-2.5 pb-20 pt-[96px] sm:px-6 md:px-14 md:pb-24 md:pt-[120px]"
+      >
       {/* Background Grid Pattern */}
       <div 
         className="absolute inset-0 pointer-events-none opacity-60"
@@ -76,6 +118,16 @@ export default function TestimonialsPage() {
         </div>
       </section>
     </main>
+    {schemas.map((schema, i) => (
+      <script
+        key={i}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c")
+        }}
+      />
+    ))}
+  </>
   );
 }
 
