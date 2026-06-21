@@ -19,12 +19,12 @@ ${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href
 
 ## Useful Navigation Links
 - [**Home**](${siteConfig.url}/best-skin-care-clinic-in-pune/)
-- [**About the Clinic**](${siteConfig.url}/best-skin-care-clinic-in-pune/about)
-- [**Our Services Directory**](${siteConfig.url}/best-skin-care-clinic-in-pune/treatment)
-- [**Patient Testimonials**](${siteConfig.url}/best-skin-care-clinic-in-pune/testimonials)
-- [**Contact Info & Directions**](${siteConfig.url}/best-skin-care-clinic-in-pune/contact-us)
-- [**Gallery**](${siteConfig.url}/best-skin-care-clinic-in-pune/gallery)
-- [**Sitemap XML**](${siteConfig.url}/best-skin-care-clinic-in-pune/sitemap.xml)
+- [**About the Clinic**](${siteConfig.url}/about/)
+- [**Our Services Directory**](${siteConfig.url}/treatment/)
+- [**Patient Testimonials**](${siteConfig.url}/testimonials/)
+- [**Contact Info & Directions**](${siteConfig.url}/contact-us/)
+- [**Gallery**](${siteConfig.url}/gallery/)
+- [**Sitemap XML**](${siteConfig.url}/sitemap.xml)
 `;
 }
 
