@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Testimonials",
   description: `Read patient reviews and testimonials for ${siteConfig.name} in Pune.`,
   alternates: {
-    canonical: `${siteConfig.url}/testimonials`
+    canonical: `${siteConfig.url}/testimonials/`
   }
 };
 
@@ -34,7 +34,7 @@ export default function TestimonialsPage() {
   return (
     <main
       id="main-content"
-      className="relative overflow-hidden bg-gradient-to-b from-[var(--cream)] via-[#FAF3FF] to-[#F3EAFF] px-6 pb-20 pt-[96px] md:px-14 md:pb-24 md:pt-[120px]"
+      className="relative overflow-hidden bg-gradient-to-b from-[var(--cream)] via-[#FAF3FF] to-[#F3EAFF] px-2.5 pb-20 pt-[96px] sm:px-6 md:px-14 md:pb-24 md:pt-[120px]"
     >
       {/* Background Grid Pattern */}
       <div 
@@ -60,7 +60,7 @@ export default function TestimonialsPage() {
             </span>
           </div>
           <h1 className="section-title text-[36px] font-extrabold leading-[1.08] text-[var(--charcoal)] md:text-[54px]">
-            More than 10,000+ <span className="grad-text">Happy Customers</span>
+            More than 1000+ <span className="grad-text">Happy Customers</span>
           </h1>
           <p className="mx-auto mt-4 max-w-[620px] font-body-main text-[15px] leading-7 text-[var(--grey)]">
             Read authentic feedback from patients who trust {siteConfig.name} for safe, 
@@ -94,7 +94,7 @@ function TestimonialCard({ item }: { item: typeof siteConfig.testimonials[number
   const handle = `@${displayName.toLowerCase().replace(/\s+/g, "")}`;
 
   return (
-    <article className="group mb-6 break-inside-avoid rounded-[22px] border border-[var(--lavender-mid)]/60 bg-gradient-to-br from-white to-[var(--lavender-bg)]/20 p-6 shadow-[0_12px_36px_rgba(91,45,142,0.06)] transition-all duration-300 hover:-translate-y-1.5 hover:bg-white hover:border-[var(--purple-light)] hover:shadow-[0_22px_44px_rgba(123,75,184,0.12)]">
+    <article className="group mb-6 break-inside-avoid rounded-[22px] border border-[var(--lavender-mid)]/60 bg-gradient-to-br from-white to-[var(--lavender-bg)]/20 p-4 sm:p-6 shadow-[0_12px_36px_rgba(91,45,142,0.06)] transition-all duration-300 hover:bg-white hover:border-[var(--purple-light)] hover:shadow-[0_22px_44px_rgba(123,75,184,0.12)]">
       {/* Top Row: Info & Rating */}
       <div className="mb-5 flex items-center justify-between gap-4">
         <div className="flex min-w-0 items-center gap-3">
@@ -117,34 +117,36 @@ function TestimonialCard({ item }: { item: typeof siteConfig.testimonials[number
               {initials}
             </div>
           )}
-          <div className="min-w-0">
-            <h2 className="font-card-title text-[15px] font-bold leading-tight text-[var(--charcoal)] truncate">
-              {displayName}
-            </h2>
-            {isLocalGuide && (
-              <p className="font-label-sm text-[9.5px] font-extrabold uppercase tracking-wider text-[var(--purple)] mt-0.5">
-                Local Guide
-              </p>
-            )}
-            <p className="font-body-main text-[11px] text-[var(--grey)] mt-0.5 truncate">
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2 flex-wrap min-w-0 mb-0.5">
+              <h2 className="font-card-title text-[15px] font-bold leading-tight text-[var(--charcoal)] truncate">
+                {displayName}
+              </h2>
+              {isLocalGuide && (
+                <span className="inline-flex items-center gap-1 text-[8.5px] font-extrabold uppercase tracking-wider text-[var(--purple)] bg-[var(--lavender-bg)] px-2 py-0.5 rounded-full border border-[var(--lavender-mid)] shrink-0">
+                  Local Guide
+                </span>
+              )}
+            </div>
+            <p className="font-body-main text-[11px] text-[var(--grey)] truncate">
               {handle}
             </p>
           </div>
         </div>
 
-        {/* Glowing Gold Star and Rating Badge */}
-        <div className="flex items-center gap-1.5 rounded-full border border-[#FDE68A]/60 bg-[#FEF3C7]/40 px-2.5 py-1 shrink-0 transition-all duration-300 group-hover:border-amber-300 group-hover:bg-amber-100/60">
-          <Star className="h-3.5 w-3.5 fill-current text-amber-500 drop-shadow-[0_0_4px_rgba(245,158,11,0.35)] transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
-          <span className="font-hero-heading text-[12px] font-extrabold text-[#92400e] leading-none">
+        {/* Glowing Purple Star and Rating Badge */}
+        <div className="flex items-center gap-1.5 rounded-full border border-[var(--lavender-mid)] bg-[var(--lavender-bg)] px-2.5 py-1 shrink-0 transition-all duration-300 group-hover:border-[var(--purple-light)] group-hover:bg-[var(--lavender-mid)]/40">
+          <Star className="h-3.5 w-3.5 fill-current text-[var(--purple)] drop-shadow-[0_0_4px_rgba(123,75,184,0.35)] transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <span className="font-hero-heading text-[12px] font-extrabold text-[var(--purple-dark)] leading-none">
             {item.rating.toFixed(1)}
           </span>
         </div>
       </div>
 
       {/* Speech-bubble Quote Block */}
-      <div className="relative overflow-hidden rounded-[16px] bg-white border border-[var(--lavender-mid)]/40 px-5 py-4 shadow-[0_4px_16px_rgba(91,45,142,0.02)]">
+      <div className="relative overflow-hidden rounded-[16px] bg-white border border-[var(--lavender-mid)]/40 px-3 py-3.5 sm:px-5 sm:py-4 shadow-[0_4px_16px_rgba(91,45,142,0.02)]">
         <span className="absolute -top-1 left-2 font-serif text-[44px] text-[var(--purple-light)]/20 leading-none select-none">“</span>
-        <p className="relative z-10 pl-4 font-body-main text-[14px] leading-7 text-[var(--grey)] whitespace-pre-line">
+        <p className="relative z-10 pl-2 sm:pl-4 font-body-main text-[14px] leading-7 text-[var(--grey)] whitespace-pre-line">
           {truncateQuote(item.quote, 400)}
         </p>
       </div>

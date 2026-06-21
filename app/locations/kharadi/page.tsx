@@ -5,8 +5,8 @@ import { siteConfig } from "@/lib/site-config";
 const locationData = siteConfig.locations.find((l) => l.slug === "kharadi")!;
 
 export const metadata: Metadata = {
-  title: `Best Dermatologist in Kharadi Wagholi | ARIIX HAIR AND SKIN CLINIC`,
-  description: `Visit ARIIX HAIR AND SKIN CLINIC at Kharadi (Wagholi), Pune. Open Sundays from 12 PM to 8 PM for advanced hair transplants, PRP, acne, and laser treatments.`,
+  title: `Best Dermatologist in Kharadi Wagholi | Ariix Hair and Skin Clinic`,
+  description: `Visit Ariix Hair and Skin Clinic at Kharadi (Wagholi), Pune. Open Sundays from 12 PM to 8 PM for advanced hair transplants, PRP, acne, and laser treatments.`,
   alternates: {
     canonical: `${siteConfig.url}/locations/kharadi/`
   }

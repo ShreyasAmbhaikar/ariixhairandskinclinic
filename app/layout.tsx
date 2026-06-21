@@ -28,6 +28,7 @@ import type { Metadata, Viewport } from "next";
 import { BackToTopFloat } from "@/components/landing/back-to-top-float";
 import { Footer } from "@/components/ariix/Footer";
 import { Header } from "@/components/ariix/Header";
+import { ScrollToTop } from "@/components/ariix/ScrollToTop";
 import { WhatsAppFloat } from "@/components/landing/whatsapp-float";
 import { siteConfig } from "@/lib/site-config";
 
@@ -114,6 +115,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <div className="canvas-wrapper relative">
+          <ScrollToTop />
           <Header />
           {children}
           <Footer />

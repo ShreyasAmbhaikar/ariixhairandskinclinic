@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Explore before and after treatment results, clinic moments, and patient transformations at Ariix Hair and Skin Clinic.",
   alternates: {
-    canonical: `${siteConfig.url}/gallery`
+    canonical: `${siteConfig.url}/gallery/`
   },
   openGraph: {
     title: `Gallery | ${siteConfig.shortName}`,
@@ -88,7 +88,7 @@ const galleryImages = [
 
 export default function GalleryPage() {
   return (
-    <main id="main-content" className="bg-[var(--cream)] px-6 pb-20 pt-[96px] md:px-14 md:pb-24 md:pt-[120px]">
+    <main id="main-content" className="bg-[var(--cream)] px-2 pb-20 pt-[96px] sm:px-6 md:px-14 md:pb-24 md:pt-[120px]">
       <section className="mx-auto max-w-[1360px] !pt-12 md:!pt-16">
         <div className="mb-10 text-center">
           <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-[var(--lavender-mid)] bg-white px-4 py-1.5 shadow-[0_4px_12px_rgba(91,45,142,0.05)]">

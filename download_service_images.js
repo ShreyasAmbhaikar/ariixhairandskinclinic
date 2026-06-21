@@ -89,9 +89,9 @@ async function main() {
     console.log(`\nProcessing: ${item.name}`);
     
     const targets = [
-      { type: 'hero', id: item.hero, name: `${item.basePath}-hero.webp`, w: 1200, h: 630 },
-      { type: 'mobile', id: item.mobile, name: `${item.basePath}-hero-mobile.webp`, w: 600, h: 800 },
-      { type: 'procedure', id: item.procedure, name: `${item.basePath}-procedure-clinic.webp`, w: 1200, h: 630 }
+      { type: 'hero', id: item.hero, name: `${item.basePath}-hero.webp`, w: 1920, h: 1008 },
+      { type: 'mobile', id: item.mobile, name: `${item.basePath}-hero-mobile.webp`, w: 1080, h: 1440 },
+      { type: 'procedure', id: item.procedure, name: `${item.basePath}-procedure-clinic.webp`, w: 1600, h: 1000 }
     ];
 
     for (const target of targets) {
@@ -106,7 +106,7 @@ async function main() {
         
         console.log(`  Converting to WebP and saving to: ${finalDest}`);
         await sharp(tempFile)
-          .webp({ quality: 85 })
+          .webp({ quality: 90 })
           .toFile(finalDest);
           
         if (fs.existsSync(tempFile)) {

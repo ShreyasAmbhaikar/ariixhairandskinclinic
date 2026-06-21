@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description: `Contact ${siteConfig.name} for appointments and skin & hair treatments in Pune.`,
   alternates: {
-    canonical: `${siteConfig.url}/contact-us`
+    canonical: `${siteConfig.url}/contact-us/`
   }
 };
 
@@ -22,7 +22,7 @@ export default function ContactUsPage() {
   const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
 
   return (
-    <main id="main-content" className="relative overflow-hidden bg-gradient-to-tr from-[#F3EEFF] via-[#FDF8FF] to-[#FFF0F7] px-6 pb-20 pt-[96px] md:px-14 md:pb-24 md:pt-[120px]">
+    <main id="main-content" className="relative overflow-hidden bg-gradient-to-tr from-[#F3EEFF] via-[#FDF8FF] to-[#FFF0F7] px-4 pb-20 pt-[96px] sm:px-6 md:px-14 md:pb-24 md:pt-[120px]">
       {/* Ambient gradient orbs for colorful premium look */}
       <div className="absolute top-[15%] left-[-15%] h-[450px] w-[450px] rounded-full bg-[var(--purple-light)]/25 blur-[120px] pointer-events-none" />
       <div className="absolute top-[60%] right-[-15%] h-[500px] w-[500px] rounded-full bg-[var(--mauve-light)]/15 blur-[130px] pointer-events-none" />
@@ -66,9 +66,9 @@ export default function ContactUsPage() {
         </div>
 
         {/* Branches Grid */}
-        <div className="grid gap-10 lg:grid-cols-2 items-stretch">
+        <div className="grid gap-8 lg:grid-cols-2 items-stretch max-w-[540px] lg:max-w-[1120px] mx-auto w-full">
           {/* Sinhagad Road Branch */}
-          <div className="group relative flex flex-col justify-between rounded-[28px] bg-white/85 backdrop-blur-md border-t-4 border-t-[var(--purple)] border-x border-b border-[var(--purple-light)]/20 p-6 shadow-[0_16px_48px_rgba(91,45,142,0.06)] md:p-8 hover:border-x-[var(--purple-light)]/50 hover:border-b-[var(--purple-light)]/50 transition-all duration-300">
+          <div className="group relative flex flex-col justify-between rounded-[28px] bg-white/85 backdrop-blur-md border-t-4 border-t-[var(--purple)] border-x border-b border-[var(--purple-light)]/20 p-5 sm:p-6 md:p-8 shadow-[0_16px_48px_rgba(91,45,142,0.06)] hover:border-x-[var(--purple-light)]/50 hover:border-b-[var(--purple-light)]/50 transition-all duration-300">
             
             <div className="mb-6 pt-2">
               <span className="inline-block px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded-full bg-[var(--lavender-bg)] text-[var(--purple-dark)] mb-4">
@@ -78,15 +78,13 @@ export default function ContactUsPage() {
                 Manikbag Clinic
               </h2>
               
-              <div className="mt-6 space-y-4 text-[14px]">
+              <div className="mt-6 space-y-4 text-[13.5px] sm:text-[14px]">
                 <div className="flex gap-3">
                   <MapPinned className="h-5 w-5 text-[var(--purple)] shrink-0 mt-0.5" />
                   <div>
                     <p className="font-bold text-[var(--charcoal)]">Address</p>
                     <p className="text-[var(--grey)] mt-1 leading-relaxed">
-                      2nd Floor, Subhadra Smruti Building, Manikbag,<br />
-                      Sinhgad Rd, opposite Indian Oil Petrol Pump,<br />
-                      above Indian Overseas Bank, Anand Nagar, Pune 411051
+                      2nd Floor, Subhadra Smruti Building, Manikbag, Sinhgad Rd, opposite Indian Oil Petrol Pump, above Indian Overseas Bank, Anand Nagar, Pune 411051
                     </p>
                   </div>
                 </div>
@@ -94,16 +92,31 @@ export default function ContactUsPage() {
                   <Clock4 className="h-5 w-5 text-[var(--purple)] shrink-0 mt-0.5" />
                   <div>
                     <p className="font-bold text-[var(--charcoal)]">Timings</p>
-                    <p className="text-[var(--grey)] mt-1 leading-relaxed">
-                      Mon – Sat: 10:30 AM – 2:00 PM, 5:30 PM – 9:00 PM<br />
-                      Sunday: Closed
-                    </p>
+                    <div className="text-[var(--grey)] mt-1 leading-relaxed space-y-1">
+                      <div className="flex flex-col sm:flex-row sm:gap-2">
+                        <span className="font-semibold text-[var(--charcoal)] min-w-[75px] sm:min-w-[85px]">Mon – Sat:</span>
+                        <span>10:30 AM – 2:00 PM, &nbsp;5:30 PM – 9:00 PM</span>
+                      </div>
+                      <div className="flex flex-col sm:flex-row sm:gap-2">
+                        <span className="font-semibold text-[var(--charcoal)] min-w-[75px] sm:min-w-[85px]">Sunday:</span>
+                        <span className="text-rose-500 font-medium">Closed</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <PhoneCall className="h-5 w-5 text-[var(--purple)] shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-bold text-[var(--charcoal)]">Phone</p>
+                    <a href="tel:+917447424939" className="text-[var(--grey)] hover:text-[var(--purple)] transition-colors mt-1 block font-semibold">
+                      +91 74474 24939
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[20px] border border-[var(--lavender-mid)]/30 bg-[var(--cream)] h-[240px] w-full mb-6 relative">
+            <div className="overflow-hidden rounded-[20px] border border-[var(--lavender-mid)]/30 bg-[var(--cream)] h-[180px] md:h-[240px] w-full mb-6 relative">
               <iframe
                 title="Sinhagad Road Clinic Location Map"
                 src="https://maps.google.com/maps?q=ARIIX%20HAIR%20AND%20SKIN%20CLINIC,%20Manikbag,%20Anand%20Nagar,%20Sinhagad%20Road,%20Pune&t=&z=14&ie=UTF8&iwloc=&output=embed"
@@ -125,7 +138,7 @@ export default function ContactUsPage() {
           </div>
 
           {/* Kharadi Branch */}
-          <div className="group relative flex flex-col justify-between rounded-[28px] bg-white/85 backdrop-blur-md border-t-4 border-t-[var(--purple)] border-x border-b border-[var(--purple-light)]/20 p-6 shadow-[0_16px_48px_rgba(91,45,142,0.06)] md:p-8 hover:border-x-[var(--purple-light)]/50 hover:border-b-[var(--purple-light)]/50 transition-all duration-300">
+          <div className="group relative flex flex-col justify-between rounded-[28px] bg-white/85 backdrop-blur-md border-t-4 border-t-[var(--purple)] border-x border-b border-[var(--purple-light)]/20 p-5 sm:p-6 md:p-8 shadow-[0_16px_48px_rgba(91,45,142,0.06)] hover:border-x-[var(--purple-light)]/50 hover:border-b-[var(--purple-light)]/50 transition-all duration-300">
             
             <div className="mb-6 pt-2">
               <span className="inline-block px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded-full bg-[var(--lavender-bg)] text-[var(--purple-dark)] mb-4">
@@ -135,15 +148,13 @@ export default function ContactUsPage() {
                 Upper Kharadi Clinic
               </h2>
               
-              <div className="mt-6 space-y-4 text-[14px]">
+              <div className="mt-6 space-y-4 text-[13.5px] sm:text-[14px]">
                 <div className="flex gap-3">
                   <MapPinned className="h-5 w-5 text-[var(--purple)] shrink-0 mt-0.5" />
                   <div>
                     <p className="font-bold text-[var(--charcoal)]">Address</p>
                     <p className="text-[var(--grey)] mt-1 leading-relaxed">
-                      Near Unnati Mahindra Showroom Pune Nagar Road,<br />
-                      Upper Kharadi Main Rd, behind Komal Silk House,<br />
-                      Wagholi, Pune, Maharashtra 412207
+                      Near Unnati Mahindra Showroom Pune Nagar Road, Upper Kharadi Main Rd, behind Komal Silk House, Wagholi, Pune, Maharashtra 412207
                     </p>
                   </div>
                 </div>
@@ -151,16 +162,31 @@ export default function ContactUsPage() {
                   <Clock4 className="h-5 w-5 text-[var(--purple)] shrink-0 mt-0.5" />
                   <div>
                     <p className="font-bold text-[var(--charcoal)]">Timings</p>
-                    <p className="text-[var(--grey)] mt-1 leading-relaxed">
-                      Sunday: 12:00 PM – 8:00 PM<br />
-                      Mon – Sat: Closed (Consultations at Sinhagad Road)
-                    </p>
+                    <div className="text-[var(--grey)] mt-1 leading-relaxed space-y-1">
+                      <div className="flex flex-col sm:flex-row sm:gap-2">
+                        <span className="font-semibold text-[var(--charcoal)] min-w-[75px] sm:min-w-[85px]">Sunday:</span>
+                        <span>12:00 PM – 8:00 PM</span>
+                      </div>
+                      <div className="flex flex-col sm:flex-row sm:gap-2">
+                        <span className="font-semibold text-[var(--charcoal)] min-w-[75px] sm:min-w-[85px]">Mon – Sat:</span>
+                        <span className="text-rose-500 font-medium">Closed (Consultations at Sinhagad Road)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <PhoneCall className="h-5 w-5 text-[var(--purple)] shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-bold text-[var(--charcoal)]">Phone</p>
+                    <a href="tel:+917447424938" className="text-[var(--grey)] hover:text-[var(--purple)] transition-colors mt-1 block font-semibold">
+                      +91 74474 24938
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[20px] border border-[var(--lavender-mid)]/30 bg-[var(--cream)] h-[240px] w-full mb-6 relative">
+            <div className="overflow-hidden rounded-[20px] border border-[var(--lavender-mid)]/30 bg-[var(--cream)] h-[180px] md:h-[240px] w-full mb-6 relative">
               <iframe
                 title="Kharadi Clinic Location Map"
                 src="https://maps.google.com/maps?q=ARIIX%20HAIR%20AND%20SKIN%20CLINIC,%20Wagholi,%20Pune&t=&z=14&ie=UTF8&iwloc=&output=embed"

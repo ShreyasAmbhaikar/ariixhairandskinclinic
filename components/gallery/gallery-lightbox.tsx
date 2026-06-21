@@ -62,13 +62,13 @@ export function GalleryLightbox({
 
   return (
     <>
-      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 lg:gap-5">
+      <div className="columns-1 gap-3 sm:columns-2 lg:columns-3 lg:gap-5">
         {images.map((image, index) => (
           <button
             key={`${image.src}-${index}`}
             type="button"
             onClick={() => setActiveIndex(index)}
-            className="group relative mb-4 block w-full break-inside-avoid overflow-hidden rounded-[18px] border border-[var(--lavender-mid)] bg-white text-left shadow-[0_10px_30px_rgba(91,45,142,0.08)] lg:mb-5"
+            className="group relative mb-3 sm:mb-4 block w-full break-inside-avoid overflow-hidden rounded-[18px] border border-[var(--lavender-mid)] bg-white text-left shadow-[0_10px_30px_rgba(91,45,142,0.08)] lg:mb-5"
             style={image.aspectRatio ? { aspectRatio: image.aspectRatio } : undefined}
             aria-label={`Open gallery ${image.type === "video" ? "video" : "image"} ${index + 1}`}
           >

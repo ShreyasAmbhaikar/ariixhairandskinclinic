@@ -240,8 +240,11 @@
       .logo-tagline { font-size: 0.52rem; }
     }
 
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; z-index: 1000; }
     .hamburger span { width: 24px; height: 2px; background: var(--purple); display: block; transition: 0.3s; border-radius: 2px; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     /* ── HERO ── */
     .hero {
@@ -454,8 +457,16 @@
     .service-icon svg { width: 26px; height: 26px; }
     .service-num {
       position: absolute; top: 1.2rem; right: 1.5rem;
-      font-family: var(--font-playfair-display), 'Playfair Display', serif; font-size: 3rem; font-weight: 700;
-      color: rgba(155,107,200,0.07); line-height: 1;
+      font-family: var(--font-playfair-display), 'Playfair Display', serif; font-size: 3.5rem; font-weight: 800;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.18;
+      line-height: 1;
+      transition: opacity 0.3s ease;
+    }
+    .service-card:hover .service-num {
+      opacity: 0.35;
     }
     .service-title { font-family: var(--font-playfair-display), 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.6rem; }
     .service-desc { font-size: 0.82rem; color: var(--grey); line-height: 1.8; }
@@ -523,7 +534,7 @@
       box-shadow: 0 4px 16px rgba(91,45,142,0.06);
       transition: box-shadow 0.3s, transform 0.3s;
     }
-    .testimonial-card:hover { box-shadow: 0 12px 36px rgba(91,45,142,0.14); transform: translateY(-3px); }
+    .testimonial-card:hover { box-shadow: 0 12px 36px rgba(91,45,142,0.14); }
     .stars { font-size: 1rem; margin-bottom: 1rem; }
     .testimonial-text { font-size: 0.87rem; color: var(--grey); line-height: 1.85; font-style: italic; }
     .testimonial-author { margin-top: 1.5rem; display: flex; align-items: center; gap: 0.8rem; }
@@ -678,11 +689,11 @@
     /* ── MOBILE ── */
     @media (max-width: 900px) {
       .nav-links { display: none; }
-      .hamburger { display: flex; }
-      .nav-links.open { display: flex; flex-direction: column; position: fixed; inset: 0; background: var(--cream); align-items: center; justify-content: center; gap: 2rem; z-index: 999; }
+      .hamburger { display: flex; z-index: 1000; }
       .hero { grid-template-columns: 1fr; }
       .hero-left { padding: 4rem 6vw 3rem; }
-      .hero-right { height: 320px; }
+      .hero-right { height: auto; min-height: 520px; display: flex; align-items: center; justify-content: center; padding: 3rem 1.5rem; }
+      .hero-clinic-card { position: relative !important; top: auto !important; left: auto !important; transform: none !important; margin: 0 !important; width: 100% !important; max-width: 520px !important; }
       .doctors-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr 1fr; }
       .promo-grid { grid-template-columns: 1fr 1fr; }
@@ -690,19 +701,31 @@
       .process-grid::before { display: none; }
       .testimonials-grid { grid-template-columns: 1fr; }
       .contact-wrap { grid-template-columns: 1fr; gap: 3rem; }
-      .footer-grid { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 2rem; }
+      .footer-grid > div:first-child { grid-column: span 2; }
       .hero-doctors { flex-direction: column; }
+      .marquee-inner { animation-duration: 15s !important; }
     }
     @media (max-width: 600px) {
       section { padding: 4rem 5vw; }
       .services-grid, .promo-grid { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .form-row { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
       .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
       .hero-actions { flex-direction: column; }
       .cta-actions { flex-direction: column; align-items: center; }
       .hours-grid { grid-template-columns: 1fr; }
+      .footer-bottom {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 0.75rem !important;
+      }
+      .footer-bottom p {
+        text-align: center !important;
+        width: 100% !important;
+      }
     }
 
     /* Utility background gradients */
@@ -880,4 +903,68 @@
       .services-grid-4 {
         grid-template-columns: 1fr !important;
       }
+    }
+
+    /* ── MOBILE MENU OVERLAY ── */
+    .mobile-menu-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--cream);
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem 6vw;
+    }
+    .mobile-menu-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(155,107,200,0.15);
+    }
+    .mobile-menu-close {
+      background: transparent;
+      border: none;
+      color: var(--purple);
+      cursor: pointer;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s;
+    }
+    .mobile-menu-close:hover {
+      transform: scale(1.1);
+    }
+    .mobile-menu-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      gap: 1.8rem;
+      margin: 2rem 0;
+    }
+    .mobile-menu-links a {
+      font-family: var(--font-playfair-display), 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      text-decoration: none;
+      transition: color 0.25s;
+    }
+    .mobile-menu-links a:hover, .mobile-menu-links a.active {
+      color: var(--purple);
+    }
+    .mobile-menu-links .btn-nav {
+      font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+      font-size: 1rem !important;
+      font-weight: 600;
+      background: var(--grad);
+      color: white !important;
+      padding: 0.75rem 2.2rem !important;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(123,75,184,0.25);
     }

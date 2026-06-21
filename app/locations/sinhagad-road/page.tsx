@@ -5,8 +5,8 @@ import { siteConfig } from "@/lib/site-config";
 const locationData = siteConfig.locations.find((l) => l.slug === "sinhagad-road")!;
 
 export const metadata: Metadata = {
-  title: `Best Dermatologist on Sinhagad Road Anand Nagar | ARIIX HAIR AND SKIN CLINIC`,
-  description: `Visit ARIIX HAIR AND SKIN CLINIC at Sinhagad Road (Manikbag), Pune. Open Mon-Sat with convenient timings for hair transplant, PRP, acne, and laser treatments.`,
+  title: `Best Dermatologist on Sinhagad Road Anand Nagar | Ariix Hair and Skin Clinic`,
+  description: `Visit Ariix Hair and Skin Clinic at Sinhagad Road (Manikbag), Pune. Open Mon-Sat with convenient timings for hair transplant, PRP, acne, and laser treatments.`,
   alternates: {
     canonical: `${siteConfig.url}/locations/sinhagad-road/`
   }
@@ -96,7 +96,7 @@ export default function SinhagadRoadLocationPage() {
                 <div>
                   <h3 className="text-[12px] font-black uppercase tracking-wider text-[var(--purple)] mb-1">Central Booking Helpline</h3>
                   <p className="text-[20px] font-black text-[var(--charcoal)]">
-                    <a href="tel:+917447424938" className="hover:text-[var(--purple)] transition-colors">📞 +91 74474 24938</a>
+                    <a href="tel:+917447424939" className="hover:text-[var(--purple)] transition-colors">📞 +91 74474 24939</a>
                   </p>
                 </div>
                 <div className="flex items-center gap-2 rounded-2xl bg-[var(--lavender-bg)] px-5 py-3 border border-[var(--lavender-mid)]/40">
@@ -130,13 +130,13 @@ export default function SinhagadRoadLocationPage() {
               </p>
               <div className="space-y-4">
                 <a 
-                  href="tel:+917447424938" 
+                  href="tel:+917447424939" 
                   className="flex h-[48px] items-center justify-center rounded-2xl bg-white text-[var(--purple)] text-[14px] font-bold hover:bg-[var(--cream)] transition-colors"
                 >
                   📞 Click to Call Now
                 </a>
                 <a 
-                  href="https://wa.me/917447424938" 
+                  href="https://wa.me/917447424939" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex h-[48px] items-center justify-center rounded-2xl border border-white/30 bg-white/10 text-[14px] font-bold hover:bg-white/20 transition-colors"

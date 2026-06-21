@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Our Treatments",
   description: `Explore treatment pages at ${siteConfig.name}.`,
   alternates: {
-    canonical: `${siteConfig.url}/treatment`
+    canonical: `${siteConfig.url}/treatment/`
   }
 };
 export default function OurServicesPage() {
@@ -51,7 +51,7 @@ export default function OurServicesPage() {
                 </span>
               </div>
               {/* Cards grid — 3 columns on desktop */}
-              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-3.5 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {category.items.map((item, itemIndex) => {
                   const treatmentInfo = siteConfig.treatments.find(
                     (t) => t.href === item.href
@@ -60,37 +60,39 @@ export default function OurServicesPage() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="group relative flex flex-col overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-br from-[#B05090] via-[#7B4BB8] to-[#5B2D8E] p-8 shadow-[0_10px_28px_rgba(91,45,142,0.18)] transition-all duration-500 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_28px_60px_rgba(91,45,142,0.38)]"
+                      className="group relative flex flex-col sm:flex-col justify-center sm:justify-start overflow-hidden rounded-[18px] sm:rounded-[28px] border border-white/10 bg-gradient-to-br from-[#B05090] via-[#7B4BB8] to-[#5B2D8E] py-3 px-4 sm:p-8 shadow-[0_6px_16px_rgba(91,45,142,0.12)] sm:shadow-[0_10px_28px_rgba(91,45,142,0.18)] transition-all duration-500 hover:-translate-y-1 sm:hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_15px_35px_rgba(91,45,142,0.28)]"
                     >
                       {/* Floating inner glow orbs */}
                       <div className="pointer-events-none absolute -top-8 -right-8 h-44 w-44 rounded-full bg-white/[0.06] blur-2xl transition-all duration-700 group-hover:scale-125 group-hover:bg-white/[0.10]" />
                       <div className="pointer-events-none absolute -bottom-4 -left-4 h-28 w-28 rounded-full bg-[var(--pink-light)]/10 blur-xl transition-all duration-700 group-hover:bg-[var(--pink-light)]/20" />
                       {/* Ghost number watermark */}
                       <span
-                        className="pointer-events-none absolute right-5 top-3 select-none font-black leading-none text-white/[0.06] transition-all duration-500 group-hover:text-white/[0.10]"
+                        className="pointer-events-none absolute right-5 top-3 select-none font-black leading-none text-white/[0.06] transition-all duration-500 group-hover:text-white/[0.10] hidden sm:block"
                         style={{ fontSize: "clamp(68px, 7vw, 92px)" }}
                       >
                         {String(itemIndex + 1).padStart(2, "0")}
                       </span>
                       {/* Card content */}
-                      <div className="relative z-10 flex flex-1 flex-col">
-                        {/* Small glass number badge */}
-                        <span className="mb-5 inline-flex h-8 w-8 items-center justify-center self-start rounded-full border border-white/30 bg-white/10 text-[11px] font-black text-white backdrop-blur-sm transition-all duration-300 group-hover:border-white/55 group-hover:bg-white/20">
-                          {String(itemIndex + 1).padStart(2, "0")}
-                        </span>
-                        {/* Treatment title */}
-                        <h3 className="text-[19px] font-extrabold leading-snug text-white transition-colors duration-300 group-hover:text-[var(--pink-light)] md:text-[21px]">
-                          {item.title}
-                        </h3>
+                      <div className="relative z-10 flex flex-row sm:flex-col items-center sm:items-start justify-between sm:justify-start w-full gap-3 sm:gap-0">
+                        <div className="flex items-center gap-3">
+                          {/* Small glass number badge */}
+                          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/30 bg-white/10 text-[11px] font-black text-white backdrop-blur-sm transition-all duration-300 group-hover:border-white/55 group-hover:bg-white/20 hidden sm:inline-flex">
+                            {String(itemIndex + 1).padStart(2, "0")}
+                          </span>
+                          {/* Treatment title */}
+                          <h3 className="text-[15.5px] sm:text-[19px] font-extrabold leading-snug text-white transition-colors duration-300 group-hover:text-[var(--pink-light)] md:text-[21px]">
+                            {item.title}
+                          </h3>
+                        </div>
                         {/* Animated expanding separator */}
-                        <div className="my-4 h-[2px] w-8 rounded-full bg-gradient-to-r from-[var(--pink-light)] via-white/50 to-transparent transition-all duration-500 group-hover:w-16" />
+                        <div className="my-4 h-[2px] w-8 rounded-full bg-gradient-to-r from-[var(--pink-light)] via-white/50 to-transparent transition-all duration-500 group-hover:w-16 hidden sm:block" />
                         {/* Description */}
-                        <p className="flex-1 text-[13.5px] leading-[1.78] text-white/80 md:text-[14px]">
+                        <p className="flex-1 text-[13.5px] leading-[1.78] text-white/80 md:text-[14px] hidden sm:block">
                           {treatmentInfo?.description}
                         </p>
                         {/* Explore link row */}
-                        <div className="mt-7 flex items-center gap-2.5">
-                          <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/58 transition-colors duration-300 group-hover:text-white/95">
+                        <div className="mt-0 sm:mt-7 flex items-center gap-2.5">
+                          <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/58 transition-colors duration-300 group-hover:text-white/95 hidden sm:inline">
                             Explore Treatment
                           </span>
                           {/* Animated arrow circle */}

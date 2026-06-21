@@ -1,10 +1,10 @@
 import type { TreatmentPageData } from "@/components/treatment/treatment-page";
 
 export const hairTransplantTreatment: TreatmentPageData = {
-  pagePath: "/hair-transplant",
+  pagePath: "/hair-transplant/",
   metaTitle: "Best Hair Transplant in Pune | Hair Transplant Cost near me",
   metaDescription:
-    "Consult Dr. Abhimanyu Jagtap (MD (Dermatology)) at ARIIX HAIR AND SKIN CLINIC — Pune's trusted FUE hair transplant clinic at Kharadi & Sinhagad Road. 90–95% graft survival. Permanent results. Book now!",
+    "Consult Dr. Abhimanyu Jagtap (MD (Dermatology)) at Ariix Hair and Skin Clinic — Pune's trusted FUE hair transplant clinic at Kharadi & Sinhagad Road. 90–95% graft survival. Permanent results. Book now!",
   ogTitle: "Advanced FUE Hair Transplant in Pune | Ariix Clinic",
   ogDescription:
     "Restore your hair density with safe, dermatologist-led FUE hair transplant treatments at our Kharadi & Sinhagad Road branches in Pune. Affordable pricing.",
@@ -30,7 +30,7 @@ export const hairTransplantTreatment: TreatmentPageData = {
   overviewKicker: "What is a Hair Transplant?",
   overviewTitle: "A Permanent Solution for Pattern Baldness & Receding Hairlines",
   overviewParagraphs: [
-    "A hair transplant is a minimally invasive surgical procedure that relocates healthy hair follicles from a donor area (usually the back or sides of the head) to thinning or balding areas. At ARIIX HAIR AND SKIN CLINIC, we specialise in the advanced Follicular Unit Extraction (FUE) technique — a method that extracts individual follicles one by one, leaving no linear scars, no stitches, and ensuring a significantly faster recovery compared to traditional strip methods.",
+    "A hair transplant is a minimally invasive surgical procedure that relocates healthy hair follicles from a donor area (usually the back or sides of the head) to thinning or balding areas. At Ariix Hair and Skin Clinic, we specialise in the advanced Follicular Unit Extraction (FUE) technique — a method that extracts individual follicles one by one, leaving no linear scars, no stitches, and ensuring a significantly faster recovery compared to traditional strip methods.",
     "Every procedure at our clinic is led and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)), a certified clinical specialist with over 17 years of experience in hair restoration and hairline design. In line with International Society of Hair Restoration Surgery (ISHRS) recommended FUE protocols, our procedures consistently achieve graft survival rates of 90–95%, ensuring high-density, natural-looking results. Whether you are searching for a hair transplant near me in Kharadi, a beard transplant in Sinhagad Road, or an FUE clinic in Pune, our team designs a personalised hairline that respects your facial structure, natural hair exit angle, and long-term density goals."
   ],
   reasonsTitle: "Why Choose Ariix Clinic for Hair Transplant?",
@@ -39,7 +39,7 @@ export const hairTransplantTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Dermatologist-Led by Dr. Abhimanyu",
-      text: "Every hair transplant is personally planned and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) — a certified hair restoration specialist with 17+ years of clinical experience in advanced FUE hairline design."
+      text: "Every hair transplant is personally planned and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) — a certified hair restoration specialist with 8+ years of clinical experience in advanced FUE hairline design."
     },
     {
       title: "Advanced FUE Technique",
@@ -153,10 +153,10 @@ export const hairTransplantTreatment: TreatmentPageData = {
 };
 
 export const prpHairTreatment: TreatmentPageData = {
-  pagePath: "/prp-hair-treatment",
+  pagePath: "/prp-hair-treatment/",
   metaTitle: "PRP Hair Treatment in Pune | Non-Surgical Hair Regrowth Cost near me",
   metaDescription:
-    "Consult Dr. Abhimanyu Jagtap at ARIIX HAIR AND SKIN CLINIC for clinically administered PRP hair therapy in Pune. Non-surgical, zero downtime, natural regrowth at Kharadi & Sinhagad Road. Book now!",
+    "Consult Dr. Abhimanyu Jagtap at Ariix Hair and Skin Clinic for clinically administered PRP hair therapy in Pune. Non-surgical, zero downtime, natural regrowth at Kharadi & Sinhagad Road. Book now!",
   ogTitle: "PRP Hair Treatment in Pune | Ariix Clinic",
   ogDescription:
     "Stimulate hair growth naturally with doctor-led PRP hair therapy at Ariix Clinic. Convenient branches at Kharadi & Sinhagad Road, Pune. Affordable session packages.",
@@ -305,10 +305,10 @@ export const prpHairTreatment: TreatmentPageData = {
 };
 
 export const hairLossTreatment: TreatmentPageData = {
-  pagePath: "/hair-loss-treatment",
+  pagePath: "/hair-loss-treatment/",
   metaTitle: "Best Hair Loss Treatment in Pune | Hair Fall Doctor near me",
   metaDescription:
-    "Searching for the best hair loss treatment near me? ARIIX HAIR AND SKIN CLINIC on Sinhagad Road & Kharadi offers expert, dermatologist-led hair fall therapies at affordable costs. Book now!",
+    "Searching for the best hair loss treatment near me? Ariix Hair and Skin Clinic on Sinhagad Road & Kharadi offers expert, dermatologist-led hair fall therapies at affordable costs. Book now!",
   ogTitle: "Advanced Hair Loss & Hair Fall Treatment in Pune | Ariix Clinic",
   ogDescription:
     "Consult our expert dermatologist for clinically proven hair loss treatments at Kharadi & Sinhagad Road, Pune. Comprehensive diagnostics, PRP, and hair fall therapies.",
@@ -334,7 +334,7 @@ export const hairLossTreatment: TreatmentPageData = {
   overviewKicker: "What is Hair Loss Treatment?",
   overviewTitle: "A Comprehensive, Medical Approach to Stop Hair Fall and Thinning",
   overviewParagraphs: [
-    "Hair loss is a complex condition triggered by genetics, hormonal imbalances (DHT sensitivity), nutritional deficiencies, stress, thyroid disorders, or underlying health conditions. A generic anti-hair fall shampoo cannot resolve this. At ARIIX HAIR AND SKIN CLINIC, our clinical team — led by Dr. Abhimanyu Jagtap (MD (Dermatology)) — provides a thorough trichoscopic and clinical diagnosis to identify the exact cause of your hair fall before recommending any treatment.",
+    "Hair loss is a complex condition triggered by genetics, hormonal imbalances (DHT sensitivity), nutritional deficiencies, stress, thyroid disorders, or underlying health conditions. A generic anti-hair fall shampoo cannot resolve this. At Ariix Hair and Skin Clinic, our clinical team — led by Dr. Abhimanyu Jagtap (MD (Dermatology)) — provides a thorough trichoscopic and clinical diagnosis to identify the exact cause of your hair fall before recommending any treatment.",
     "According to dermatological research published in the Indian Journal of Dermatology, approximately 58% of Indian men and 40% of Indian women experience significant hair thinning by age 50. Our multi-modality treatment plans at Kharadi and Sinhagad Road clinics combine medical growth promoters, targeted vitamin supplementation, lifestyle correction, PRP therapy, and scalp mesotherapy to systematically reverse hair thinning, restore follicular health, and prevent permanent follicle loss."
   ],
   reasonsTitle: "Why Choose Ariix Clinic for Hair Loss Treatment?",
@@ -457,10 +457,10 @@ export const hairLossTreatment: TreatmentPageData = {
 };
 
 export const hairFallTreatment: TreatmentPageData = {
-  pagePath: "/hair-fall-treatment",
+  pagePath: "/hair-fall-treatment/",
   metaTitle: "Sudden Hair Fall Treatment in Pune | Telogen Effluvium & Acute Shedding Doctor",
   metaDescription:
-    "Experiencing sudden or excessive hair fall in Pune? Dr. Abhimanyu Jagtap at ARIIX HAIR AND SKIN CLINIC diagnoses and treats Telogen Effluvium, stress-induced shedding & acute hair fall at Kharadi & Sinhagad Road. Book now!",
+    "Experiencing sudden or excessive hair fall in Pune? Dr. Abhimanyu Jagtap at Ariix Hair and Skin Clinic diagnoses and treats Telogen Effluvium, stress-induced shedding & acute hair fall at Kharadi & Sinhagad Road. Book now!",
   ogTitle: "Advanced Hair Fall Treatment in Pune | Ariix Clinic",
   ogDescription:
     "Restore your hair volume, control active shedding, and strengthen hair roots with customized medical protocols at our Pune clinics.",
@@ -486,7 +486,7 @@ export const hairFallTreatment: TreatmentPageData = {
   overviewKicker: "What is Hair Fall Treatment?",
   overviewTitle: "Understanding and Reversing Active Hair Shedding",
   overviewParagraphs: [
-    "Hair fall treatment targets the root cause of active shedding — whether it is Telogen Effluvium (stress or illness-induced sudden shedding), nutritional deficiency (iron, Vitamin D3, B12, zinc), hormonal imbalance (thyroid, PCOS), or early DHT-driven follicle miniaturisation. Unlike progressive hair loss (Androgenetic Alopecia), acute hair fall is often fully reversible once the trigger is identified and corrected. At ARIIX HAIR AND SKIN CLINIC, Dr. Abhimanyu Jagtap (MD (Dermatology)) uses advanced digital trichoscopy to precisely identify whether your hair fall is due to stress, diet, thyroid imbalances, or DHT sensitivity.",
+    "Hair fall treatment targets the root cause of active shedding — whether it is Telogen Effluvium (stress or illness-induced sudden shedding), nutritional deficiency (iron, Vitamin D3, B12, zinc), hormonal imbalance (thyroid, PCOS), or early DHT-driven follicle miniaturisation. Unlike progressive hair loss (Androgenetic Alopecia), acute hair fall is often fully reversible once the trigger is identified and corrected. At Ariix Hair and Skin Clinic, Dr. Abhimanyu Jagtap (MD (Dermatology)) uses advanced digital trichoscopy to precisely identify whether your hair fall is due to stress, diet, thyroid imbalances, or DHT sensitivity.",
     "Our clinics on Kharadi Road and Sinhagad Road design highly tailored recovery protocols for each patient — combining targeted prescriptions, nutritional correction, and in-clinic accelerators like PRP or mesotherapy. Active hair fall typically reduces within 4 to 6 weeks of beginning medical treatment."
   ],
   reasonsTitle: "Why Choose Ariix Clinic for Hair Fall Control?",
@@ -609,10 +609,10 @@ export const hairFallTreatment: TreatmentPageData = {
 };
 
 export const beardTransplantTreatment: TreatmentPageData = {
-  pagePath: "/beard-transplant",
+  pagePath: "/beard-transplant/",
   metaTitle: "Best Beard Transplant in Pune | Beard Transplant Cost near me",
   metaDescription:
-    "Looking for the best beard transplant clinic near me? ARIIX HAIR AND SKIN CLINIC on Kharadi Road & Sinhagad Road offers FDA-approved FUE beard transplants at affordable cost. Book now!",
+    "Looking for the best beard transplant clinic near me? Ariix Hair and Skin Clinic on Kharadi Road & Sinhagad Road offers FDA-approved FUE beard transplants at affordable cost. Book now!",
   ogTitle: "FUE Beard Transplant in Pune | Ariix Clinic",
   ogDescription:
     "Get a thick, patchy-free, natural-looking beard and mustache. Advanced FUE grafting tailored to your facial structure at our Pune clinics.",
@@ -639,7 +639,7 @@ export const beardTransplantTreatment: TreatmentPageData = {
   overviewTitle: "FUE Grafting for a Fuller, Sharp Beard Profile",
   overviewParagraphs: [
     "A beard transplant is a cosmetic surgical procedure that relocates healthy hair follicles from the donor site (back of the scalp) to the beard, mustache, or sideburn areas. Using the advanced Follicular Unit Extraction (FUE) technique, individual grafts are harvested using 0.7–0.8mm micro-punches and implanted without linear scarring — achieving maximum natural density.",
-    "At ARIIX HAIR AND SKIN CLINIC, Dr. Abhimanyu Jagtap (MD (Dermatology)) personally leads each beard transplant procedure with meticulous attention to graft direction, exit angle, and density distribution. Whether you are searching for a beard transplant near me, a beard implant in Pune, a mustache restoration clinic in Kharadi, or a sideburn transplant near Sinhagad Road — our FUE precision ensures a completely natural look that blends seamlessly with your existing facial hair and jawline structure."
+    "At Ariix Hair and Skin Clinic, Dr. Abhimanyu Jagtap (MD (Dermatology)) personally leads each beard transplant procedure with meticulous attention to graft direction, exit angle, and density distribution. Whether you are searching for a beard transplant near me, a beard implant in Pune, a mustache restoration clinic in Kharadi, or a sideburn transplant near Sinhagad Road — our FUE precision ensures a completely natural look that blends seamlessly with your existing facial hair and jawline structure."
   ],
   reasonsTitle: "Why Choose Ariix Clinic for Beard Transplant?",
   reasonsDescription:
@@ -761,10 +761,10 @@ export const beardTransplantTreatment: TreatmentPageData = {
 };
 
 export const dandruffTreatment: TreatmentPageData = {
-  pagePath: "/dandruff-treatment",
+  pagePath: "/dandruff-treatment/",
   metaTitle: "Best Dandruff Treatment in Pune | Dandruff Doctor near me",
   metaDescription:
-    "Suffering from dandruff, scalp flaking, or Seborrheic Dermatitis in Pune? Dr. Abhimanyu Jagtap at ARIIX HAIR AND SKIN CLINIC offers clinical scalp peels, antifungal therapy & digital trichoscopy at Kharadi & Sinhagad Road. Book now!",
+    "Suffering from dandruff, scalp flaking, or Seborrheic Dermatitis in Pune? Dr. Abhimanyu Jagtap at Ariix Hair and Skin Clinic offers clinical scalp peels, antifungal therapy & digital trichoscopy at Kharadi & Sinhagad Road. Book now!",
   ogTitle: "Dandruff Treatment & Scalp Peels in Pune | Ariix Clinic",
   ogDescription:
     "Get rid of stubborn dandruff, scalp flaking, and itching. Certified dermatologist-led scalp peeling and medical therapies at our Pune clinics.",
@@ -791,7 +791,7 @@ export const dandruffTreatment: TreatmentPageData = {
   overviewTitle: "Targeted Medical Therapy for Flake-Free, Healthy Scalp",
   overviewParagraphs: [
     "Dandruff is a common scalp condition characterised by flaking skin, most often caused by an overgrowth of a yeast-like fungus called Malassezia globosa, excess sebum production, or inflammatory scalp conditions such as Seborrheic Dermatitis. According to global dermatological data, Seborrheic Dermatitis affects approximately 3–5% of the global population, with significantly higher prevalence in humid climates like Pune. Self-treating with over-the-counter anti-dandruff shampoos delivers only temporary surface-level relief.",
-    "At ARIIX HAIR AND SKIN CLINIC, Dr. Abhimanyu Jagtap (MD (Dermatology)) uses digital trichoscopy to precisely diagnose the type of scalp condition — dry dandruff, oily dandruff (Seborrhoeic Dermatitis), scalp eczema, or psoriasis — and prescribes customised clinical protocols including medical-grade scalp peels (salicylic acid, glycolic acid), antifungal agents, and anti-inflammatory therapies for lasting scalp health."
+    "At Ariix Hair and Skin Clinic, Dr. Abhimanyu Jagtap (MD (Dermatology)) uses digital trichoscopy to precisely diagnose the type of scalp condition — dry dandruff, oily dandruff (Seborrhoeic Dermatitis), scalp eczema, or psoriasis — and prescribes customised clinical protocols including medical-grade scalp peels (salicylic acid, glycolic acid), antifungal agents, and anti-inflammatory therapies for lasting scalp health."
   ],
   reasonsTitle: "Why Choose Ariix Clinic for Dandruff Treatment?",
   reasonsDescription:
@@ -918,7 +918,7 @@ export const dandruffTreatment: TreatmentPageData = {
 // LASER & SKIN TREATMENTS
 // =============================================================================
 export const laserHairRemovalTreatment: TreatmentPageData = {
-  pagePath: "/laser-hair-removal",
+  pagePath: "/laser-hair-removal/",
   metaTitle: "Best Laser Hair Removal in Pune | Laser Hair Removal Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for premium laser hair removal in Pune. Safe, permanent hair reduction on Kharadi & Sinhagad Road.",
   ogTitle: "Laser Hair Removal in Pune | Ariix Clinic",
@@ -952,7 +952,7 @@ export const laserHairRemovalTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Expertise of Dr. Abhimanyu",
-      text: "Every session is monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in aesthetic dermatology."
+      text: "Every session is monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in aesthetic dermatology."
     },
     {
       title: "Comfortable Cooling Technology",
@@ -1055,7 +1055,7 @@ export const laserHairRemovalTreatment: TreatmentPageData = {
 };
 
 export const laserTattooRemovalTreatment: TreatmentPageData = {
-  pagePath: "/laser-tattoo-removal",
+  pagePath: "/laser-tattoo-removal/",
   metaTitle: "Best Laser Tattoo Removal in Pune | Tattoo Removal Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for safe Q-Switched laser tattoo removal in Pune. Advanced scar-free ink clearance at Kharadi & Sinhagad Road.",
   ogTitle: "Laser Tattoo Removal in Pune | Ariix Clinic",
@@ -1089,7 +1089,7 @@ export const laserTattooRemovalTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in clinical skin and laser care."
+      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in clinical skin and laser care."
     },
     {
       title: "Dual Wavelength Technology",
@@ -1192,7 +1192,7 @@ export const laserTattooRemovalTreatment: TreatmentPageData = {
 };
 
 export const stretchMarkRemovalTreatment: TreatmentPageData = {
-  pagePath: "/stretch-mark-removal",
+  pagePath: "/stretch-mark-removal/",
   metaTitle: "Best Stretch Mark Removal in Pune | Stretch Mark Treatment Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective stretch mark removal in Pune. Fractional CO2 & RF Microneedling at Kharadi & Sinhagad Road.",
   ogTitle: "Laser Stretch Mark Removal in Pune | Ariix Clinic",
@@ -1226,7 +1226,7 @@ export const stretchMarkRemovalTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in aesthetic treatments."
+      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in aesthetic treatments."
     },
     {
       title: "Dual-Technology Synergy",
@@ -1329,7 +1329,7 @@ export const stretchMarkRemovalTreatment: TreatmentPageData = {
 };
 
 export const laserSkinRejuvenationTreatment: TreatmentPageData = {
-  pagePath: "/laser-skin-rejuvenation",
+  pagePath: "/laser-skin-rejuvenation/",
   metaTitle: "Best Laser Skin Rejuvenation in Pune | Laser Skin Toning near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for premium Carbon Laser Peel & IPL Photofacial in Pune. Instant glow at Kharadi & Sinhagad Road.",
   ogTitle: "Laser Skin Rejuvenation in Pune | Ariix Clinic",
@@ -1363,7 +1363,7 @@ export const laserSkinRejuvenationTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Expertise of Dr. Abhimanyu",
-      text: "Every session is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in clinical skin treatments."
+      text: "Every session is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in clinical skin treatments."
     },
     {
       title: "Dual Technology Approach",
@@ -1466,7 +1466,7 @@ export const laserSkinRejuvenationTreatment: TreatmentPageData = {
 };
 
 export const acneTreatment: TreatmentPageData = {
-  pagePath: "/acne-treatment",
+  pagePath: "/acne-treatment/",
   metaTitle: "Best Acne Treatment in Pune | Pimple Treatment Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective acne treatment in Pune. Clear active pimples safely at Kharadi & Sinhagad Road.",
   ogTitle: "Acne & Pimple Treatment in Pune | Ariix Clinic",
@@ -1500,7 +1500,7 @@ export const acneTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every plan is designed and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in medical dermatology."
+      text: "Every plan is designed and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in medical dermatology."
     },
     {
       title: "Customized Medical Protocols",
@@ -1603,7 +1603,7 @@ export const acneTreatment: TreatmentPageData = {
 };
 
 export const acneScarTreatment: TreatmentPageData = {
-  pagePath: "/acne-scar-treatment",
+  pagePath: "/acne-scar-treatment/",
   metaTitle: "Best Acne Scar Treatment in Pune | Acne Scar Removal Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for advanced laser acne scar treatment in Pune. Smooth deep scars at Kharadi & Sinhagad Road.",
   ogTitle: "Acne Scar Removal in Pune | Ariix Clinic",
@@ -1637,7 +1637,7 @@ export const acneScarTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every procedure is planned and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in laser skin resurfacing."
+      text: "Every procedure is planned and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in laser skin resurfacing."
     },
     {
       title: "Multi-Modality Resurfacing",
@@ -1740,7 +1740,7 @@ export const acneScarTreatment: TreatmentPageData = {
 };
 
 export const pigmentationTreatment: TreatmentPageData = {
-  pagePath: "/pigmentation-treatment",
+  pagePath: "/pigmentation-treatment/",
   metaTitle: "Best Pigmentation Treatment in Pune | Skin Pigmentation Treatment Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective pigmentation treatment in Pune. Fade melasma & dark spots at Kharadi & Sinhagad Road.",
   ogTitle: "Skin Pigmentation Treatment in Pune | Ariix Clinic",
@@ -1774,7 +1774,7 @@ export const pigmentationTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in treating hyperpigmentation."
+      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in treating hyperpigmentation."
     },
     {
       title: "Multi-Layer Pigment Targeting",
@@ -1877,7 +1877,7 @@ export const pigmentationTreatment: TreatmentPageData = {
 };
 
 export const darkCircleTreatment: TreatmentPageData = {
-  pagePath: "/dark-circle-treatment",
+  pagePath: "/dark-circle-treatment/",
   metaTitle: "Best Dark Circle Treatment in Pune | Under Eye Dark Circle Removal Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective under eye dark circle removal in Pune at Kharadi & Sinhagad Road. Book now!",
   ogTitle: "Dark Circle Treatment in Pune | Ariix Clinic",
@@ -1911,7 +1911,7 @@ export const darkCircleTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in clinical skin rejuvenation."
+      text: "Every treatment is planned and monitored by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in clinical skin rejuvenation."
     },
     {
       title: "Safe, Delicate Formulations",
@@ -2014,7 +2014,7 @@ export const darkCircleTreatment: TreatmentPageData = {
 };
 
 export const moleRemovalTreatment: TreatmentPageData = {
-  pagePath: "/mole-removal-treatment",
+  pagePath: "/mole-removal-treatment/",
   metaTitle: "Best Mole Removal in Pune | Mole Removal Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for safe laser mole removal in Pune. Scar-free mole removal cost at Kharadi & Sinhagad Road.",
   ogTitle: "Mole Removal Treatment in Pune | Ariix Clinic",
@@ -2048,7 +2048,7 @@ export const moleRemovalTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every procedure is performed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in minor skin surgeries."
+      text: "Every procedure is performed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in minor skin surgeries."
     },
     {
       title: "Advanced RF Ablation",
@@ -2151,7 +2151,7 @@ export const moleRemovalTreatment: TreatmentPageData = {
 };
 
 export const skinTagRemovalTreatment: TreatmentPageData = {
-  pagePath: "/skin-tag-removal-treatment",
+  pagePath: "/skin-tag-removal-treatment/",
   metaTitle: "Best Skin Tag Removal in Pune | Skin Tag Removal Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for painless skin tag removal in Pune. Safe laser tag removal at Kharadi & Sinhagad Road.",
   ogTitle: "Skin Tag Removal Treatment in Pune | Ariix Clinic",
@@ -2185,7 +2185,7 @@ export const skinTagRemovalTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every procedure is performed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in micro-surgical skin treatments."
+      text: "Every procedure is performed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in micro-surgical skin treatments."
     },
     {
       title: "Instant RF Ablation",
@@ -2288,7 +2288,7 @@ export const skinTagRemovalTreatment: TreatmentPageData = {
 };
 
 export const psoriasisTreatment: TreatmentPageData = {
-  pagePath: "/psoriasis-treatment",
+  pagePath: "/psoriasis-treatment/",
   metaTitle: "Best Psoriasis Treatment in Pune | Psoriasis Clinic near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for advanced psoriasis treatment in Pune. Control scaling & itching at Kharadi & Sinhagad Road.",
   ogTitle: "Psoriasis Treatment in Pune | Ariix Clinic",
@@ -2322,7 +2322,7 @@ export const psoriasisTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every treatment plan is managed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in chronic skin conditions."
+      text: "Every treatment plan is managed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in chronic skin conditions."
     },
     {
       title: "Customized Medical Management",
@@ -2425,7 +2425,7 @@ export const psoriasisTreatment: TreatmentPageData = {
 };
 
 export const vitiligoTreatment: TreatmentPageData = {
-  pagePath: "/vitiligo-treatment",
+  pagePath: "/vitiligo-treatment/",
   metaTitle: "Best Vitiligo Treatment in Pune | Vitiligo Doctor near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for effective vitiligo treatment in Pune. Regain skin pigment at Kharadi & Sinhagad Road.",
   ogTitle: "Vitiligo Treatment in Pune | Ariix Clinic",
@@ -2459,7 +2459,7 @@ export const vitiligoTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every plan is designed and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in managing complex skin disorders."
+      text: "Every plan is designed and supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in managing complex skin disorders."
     },
     {
       title: "Focus on Plaque Stabilization",
@@ -2562,7 +2562,7 @@ export const vitiligoTreatment: TreatmentPageData = {
 };
 
 export const chemicalPeelTreatment: TreatmentPageData = {
-  pagePath: "/chemical-peel-treatment",
+  pagePath: "/chemical-peel-treatment/",
   metaTitle: "Best Chemical Peel in Pune | Chemical Peel Treatment Cost near me",
   metaDescription: "Consult Dr. Abhimanyu Jagtap at Ariix Clinic for safe chemical peel in Pune. Brighten skin with salicylic & glycolic peels at Kharadi & Sinhagad Road.",
   ogTitle: "Chemical Peel Treatment in Pune | Ariix Clinic",
@@ -2596,7 +2596,7 @@ export const chemicalPeelTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Every chemical peel is selected and administered by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in clinical aesthetics."
+      text: "Every chemical peel is selected and administered by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in clinical aesthetics."
     },
     {
       title: "Medical-Grade Formulation",
@@ -2704,7 +2704,7 @@ export const chemicalPeelTreatment: TreatmentPageData = {
 // FACIAL & REJUVENATION TREATMENTS
 // =============================================================================
 export const hydraFacialTreatment: TreatmentPageData = {
-  pagePath: "/hydra-facial",
+  pagePath: "/hydra-facial/",
   metaTitle: "Best Hydra Facial in Pune | Hydrafacial Cost Near Me | Ariix Clinic",
   metaDescription:
     "Consult Dr. Abhimanyu Jagtap at the best hydrafacial clinic near me in Pune. Get details on hydrafacial cost and benefits. Deeply cleanses and hydrates skin.",
@@ -2743,7 +2743,7 @@ export const hydraFacialTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Supervised by Dr. Abhimanyu",
-      text: "Your skin assessment and treatment flow are designed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in clinical dermatology and aesthetic care."
+      text: "Your skin assessment and treatment flow are designed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in clinical dermatology and aesthetic care."
     },
     {
       title: "Medical-Grade Technology",
@@ -2876,7 +2876,7 @@ export const hydraFacialTreatment: TreatmentPageData = {
 };
 
 export const skinPolishingRejuvenationTreatment: TreatmentPageData = {
-  pagePath: "/skin-polishing-and-rejuvenation",
+  pagePath: "/skin-polishing-and-rejuvenation/",
   metaTitle: "Skin Polishing & Rejuvenation in Pune | Microdermabrasion Near Me",
   metaDescription:
     "Get skin polishing and brightening near me in Pune at Ariix Clinic. Restore smooth skin, reduce scars, and clear dullness under specialist care. Book now!",
@@ -2915,7 +2915,7 @@ export const skinPolishingRejuvenationTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Dermatologist-Led Care",
-      text: "Your treatment is supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in medical aesthetics, ensuring safe and precise exfoliation."
+      text: "Your treatment is supervised by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in medical aesthetics, ensuring safe and precise exfoliation."
     },
     {
       title: "Diamond-Tip Technology",
@@ -3048,7 +3048,7 @@ export const skinPolishingRejuvenationTreatment: TreatmentPageData = {
 };
 
 export const mediFacialTreatment: TreatmentPageData = {
-  pagePath: "/medi-facial",
+  pagePath: "/medi-facial/",
   metaTitle: "Best Medi Facial in Pune | Medi Facial Near Me | Ariix Clinic",
   metaDescription:
     "Visit the best medi facial clinic near me in Pune. Consult Dr. Abhimanyu Jagtap for customized medical-grade facials. Solve acne, dullness & aging. Book now!",
@@ -3087,7 +3087,7 @@ export const mediFacialTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Dermatologist-Formulated Care",
-      text: "Your facial is designed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience, ensuring the use of safe, medical-grade active ingredients."
+      text: "Your facial is designed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience, ensuring the use of safe, medical-grade active ingredients."
     },
     {
       title: "Customized Formulations",
@@ -3220,7 +3220,7 @@ export const mediFacialTreatment: TreatmentPageData = {
 };
 
 export const vampireFacialTreatment: TreatmentPageData = {
-  pagePath: "/vampire-facial",
+  pagePath: "/vampire-facial/",
   metaTitle: "Vampire Facial in Pune | Vampire Facial Near Me | Ariix Clinic",
   metaDescription:
     "Experience the best platelet rich plasma facial near me at Ariix Clinic. Safe Vampire Facial in Pune for acne scars, collagen boosting, and fine lines. Book now!",
@@ -3259,7 +3259,7 @@ export const vampireFacialTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Dermatologist-Led PRP Care",
-      text: "Your PRP preparation and microneedling parameters are managed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience in aesthetic medicine."
+      text: "Your PRP preparation and microneedling parameters are managed by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience in aesthetic medicine."
     },
     {
       title: "High-Concentration PRP",
@@ -3392,7 +3392,7 @@ export const vampireFacialTreatment: TreatmentPageData = {
 };
 
 export const oxyHydraFacialTreatment: TreatmentPageData = {
-  pagePath: "/oxy-hydra-facial",
+  pagePath: "/oxy-hydra-facial/",
   metaTitle: "Oxy Hydra Facial in Pune | Oxy Hydra Facial Near Me | Ariix Clinic",
   metaDescription:
     "Get Oxy Hydra Facial & photo facial near me in Pune at Ariix Clinic. Revitalize skin cells with pure oxygen infusion and advanced IPL light therapy. Book now!",
@@ -3431,7 +3431,7 @@ export const oxyHydraFacialTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Dermatologist-Supervised Care",
-      text: "Your IPL light parameters and oxygen therapy are configured by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience, ensuring safety for Indian skin types."
+      text: "Your IPL light parameters and oxygen therapy are configured by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience, ensuring safety for Indian skin types."
     },
     {
       title: "Advanced IPL Systems",
@@ -3564,7 +3564,7 @@ export const oxyHydraFacialTreatment: TreatmentPageData = {
 };
 
 export const carbonPeelFruitPeelTreatment: TreatmentPageData = {
-  pagePath: "/carbon-peel-fruit-peel",
+  pagePath: "/carbon-peel-fruit-peel/",
   metaTitle: "Carbon Peel & Fruit Peel in Pune | Carbon Peel Near Me | Ariix Clinic",
   metaDescription:
     "Get carbon peel and fruit peel treatment near me in Pune at Ariix Clinic. Target oily skin, acne, and open pores under expert guidance. Book now!",
@@ -3603,7 +3603,7 @@ export const carbonPeelFruitPeelTreatment: TreatmentPageData = {
   reasons: [
     {
       title: "Dermatologist-Formulated Peels",
-      text: "Your peel selection and laser parameters are determined by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 17+ years experience, ensuring safety and efficacy."
+      text: "Your peel selection and laser parameters are determined by Dr. Abhimanyu Jagtap (MD (Dermatology)) with 8+ years experience, ensuring safety and efficacy."
     },
     {
       title: "Advanced Q-Switched Laser",

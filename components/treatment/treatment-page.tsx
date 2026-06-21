@@ -128,7 +128,7 @@ export type TreatmentPageData = {
 const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
 
 export function createTreatmentMetadata(data: TreatmentPageData): Metadata {
-  const pageUrl = `${siteConfig.url}${data.pagePath}`;
+  const pageUrl = `${siteConfig.url}${data.pagePath}${data.pagePath.endsWith('/') ? '' : '/'}`;
   const heroImageAbsolute = new URL(data.heroImage, siteConfig.url).toString();
 
   return {
@@ -155,10 +155,9 @@ export function createTreatmentMetadata(data: TreatmentPageData): Metadata {
 }
 
 export function TreatmentPage({ data }: { data: TreatmentPageData }) {
-  const pageUrl = `${siteConfig.url}${data.pagePath}`;
+  const pageUrl = `${siteConfig.url}${data.pagePath}${data.pagePath.endsWith('/') ? '' : '/'}`;
   const heroImageAbsolute = new URL(data.heroImage, siteConfig.url).toString();
   const BadgeIcon = data.heroBadgeIcon === "sparkles" ? Sparkles : SmilePlus;
-  const mobileHeroImage = data.heroImage.replace(/\.webp$/, "-mobile.webp");
 
   const structuredData = [
     {
@@ -221,41 +220,27 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
       <link
         rel="preload"
         as="image"
-        href={mobileHeroImage}
-        media="(max-width: 640px)"
-        fetchPriority="high"
-      />
-      <link
-        rel="preload"
-        as="image"
         href={data.heroImage}
-        media="(min-width: 641px)"
         fetchPriority="high"
       />
-      <main id="main-content" className="bg-[var(--cream)] pt-[80px]">
+      <main id="main-content" className="bg-[var(--cream)] pt-[56px] md:pt-[68px]">
         <section className="relative overflow-hidden bg-[var(--cream)]">
           <div className="absolute inset-0">
-            <picture>
-              <source
-                media="(max-width: 640px)"
-                srcSet={mobileHeroImage}
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={data.heroImage}
-                alt={data.heroAlt}
-                className="absolute inset-0 h-full w-full object-cover"
-                style={{ objectFit: "cover", objectPosition: data.heroObjectPosition ?? "50% 50%" }}
-                fetchPriority="high"
-                loading="eager"
-                width={1200}
-                height={630}
-              />
-            </picture>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={data.heroImage}
+              alt={data.heroAlt}
+              className="absolute inset-0 h-full w-full object-cover"
+              style={{ objectFit: "cover", objectPosition: data.heroObjectPosition ?? "50% 50%" }}
+              fetchPriority="high"
+              loading="eager"
+              width={1920}
+              height={1080}
+            />
             <div className={data.heroGradientClassName ?? "absolute inset-0 bg-[linear-gradient(90deg,rgba(28,18,37,0.95)_0%,rgba(91,45,142,0.85)_46%,rgba(253,248,255,0.12)_100%)]"} />
           </div>
 
-          <div className="relative mx-auto grid min-h-[350px] lg:min-h-[520px] w-full max-w-[1360px] items-center gap-7 px-4 pb-6 pt-6 sm:px-6 md:px-14 md:pt-8 lg:grid-cols-[minmax(0,1fr)_430px] lg:pb-6 lg:pt-10">
+          <div className="relative mx-auto grid min-h-[350px] lg:min-h-[520px] w-full max-w-[1360px] items-center gap-7 px-4 pb-6 pt-6 sm:px-6 md:px-14 md:pt-8 lg:grid-cols-[minmax(0,1fr)_540px] lg:pb-6 lg:pt-10">
             <div className="w-full min-w-0 max-w-none pb-6 text-white sm:max-w-[380px] md:max-w-[850px]">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/12 px-4 py-2 font-label-sm text-[12px] font-bold uppercase tracking-[0.18em] backdrop-blur-md">
                 <BadgeIcon className="h-4 w-4" aria-hidden="true" />
@@ -296,60 +281,60 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
                 Quick Clinic Details
               </p>
               <div className="space-y-4">
-                {/* Kharadi Branch Card */}
-                <div className="rounded-[20px] bg-white/14 border border-white/20 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] text-left backdrop-blur-sm">
-                  <div className="flex items-center gap-2 mb-1.5 text-white">
-                    <MapPin className="h-4 w-4 text-[var(--purple-light)]" />
-                    <div className="font-bold text-[14.5px] tracking-wide text-white">Kharadi Branch</div>
-                  </div>
-                  <p className="text-[12.5px] text-white/80 leading-relaxed mb-2.5">
-                    Near Unnati Mahindra Showroom, Upper Kharadi Main Rd, behind Komal Silk House, Wagholi, Pune 412207
-                  </p>
-                  <div className="flex items-start gap-2 pt-2 border-t border-white/10 text-[var(--purple-light)] mb-2.5">
-                    <Clock4 className="h-3.5 w-3.5 mt-0.5 text-[var(--purple-light)]" />
-                    <div className="text-[11.5px]">
-                      <span className="font-bold block text-white">Sunday: 12:00 PM – 8:00 PM</span>
-                      <span className="text-white/60 text-[10.5px]">Mon – Sat: Closed</span>
-                    </div>
-                  </div>
-                  <a
-                    href="/locations/kharadi"
-                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[var(--purple-light)] hover:text-white transition-colors"
-                  >
-                    <span>View Branch & Map</span>
-                    <ChevronRight className="h-3 w-3" />
-                  </a>
-                </div>
-
                 {/* Sinhagad Road Branch Card */}
-                <div className="rounded-[20px] bg-white/14 border border-white/20 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] text-left backdrop-blur-sm">
-                  <div className="flex items-center gap-2 mb-1.5 text-white">
-                    <MapPin className="h-4 w-4 text-[var(--purple-light)]" />
-                    <div className="font-bold text-[14.5px] tracking-wide text-white">Sinhagad Road Branch</div>
+                <div className="rounded-[20px] bg-white/90 border border-white/30 p-5 shadow-[0_8px_30px_rgba(0,0,0,0.06)] text-left backdrop-blur-md">
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="h-4 w-4 text-[var(--purple)]" />
+                    <div className="font-bold text-[14.5px] tracking-wide text-[var(--charcoal)]">Sinhagad Road Branch</div>
                   </div>
-                  <p className="text-[12.5px] text-white/80 leading-relaxed mb-2.5">
+                  <p className="text-[12.5px] text-[var(--grey)] leading-relaxed mb-3">
                     2nd Floor, Subhadra Smruti Building, Manikbag, opposite Indian Oil Petrol Pump, Anand Nagar, Sinhgad Rd, Pune 411051
                   </p>
-                  <div className="flex items-start gap-2 pt-2 border-t border-white/10 text-[var(--purple-light)] mb-2.5">
-                    <Clock4 className="h-3.5 w-3.5 mt-0.5 text-[var(--purple-light)]" />
-                    <div className="text-[11.5px] space-y-0.5 text-white">
-                      <span className="font-bold flex justify-between">
+                  <div className="flex items-start gap-2 pt-2.5 border-t border-[var(--lavender-mid)]/40 mb-3">
+                    <Clock4 className="h-3.5 w-3.5 mt-0.5 text-[var(--purple)]" />
+                    <div className="text-[11.5px] space-y-0.5 text-[var(--charcoal)]">
+                      <span className="font-bold flex justify-between gap-4">
                         <span>Mon – Sat (Morning)</span>
                         <span>10:30 AM – 2:00 PM</span>
                       </span>
-                      <span className="font-bold flex justify-between">
+                      <span className="font-bold flex justify-between gap-4">
                         <span>Mon – Sat (Evening)</span>
                         <span>5:30 PM – 9:00 PM</span>
                       </span>
-                      <span className="text-white/60 text-[10.5px] block pt-0.5">Sunday: Closed</span>
+                      <span className="text-[var(--grey)] text-[10.5px] block pt-0.5">Sunday: Closed</span>
                     </div>
                   </div>
                   <a
                     href="/locations/sinhagad-road"
-                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[var(--purple-light)] hover:text-white transition-colors"
+                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[var(--purple)] hover:text-[var(--purple-dark)] transition-colors"
                   >
                     <span>View Branch & Map</span>
-                    <ChevronRight className="h-3 w-3" />
+                    <ChevronRight className="h-3.5 w-3.5" />
+                  </a>
+                </div>
+
+                {/* Kharadi Branch Card */}
+                <div className="rounded-[20px] bg-white/90 border border-white/30 p-5 shadow-[0_8px_30px_rgba(0,0,0,0.06)] text-left backdrop-blur-md">
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="h-4 w-4 text-[var(--purple)]" />
+                    <div className="font-bold text-[14.5px] tracking-wide text-[var(--charcoal)]">Kharadi Branch</div>
+                  </div>
+                  <p className="text-[12.5px] text-[var(--grey)] leading-relaxed mb-3">
+                    Near Unnati Mahindra Showroom, Upper Kharadi Main Rd, behind Komal Silk House, Wagholi, Pune 412207
+                  </p>
+                  <div className="flex items-start gap-2 pt-2.5 border-t border-[var(--lavender-mid)]/40 mb-3">
+                    <Clock4 className="h-3.5 w-3.5 mt-0.5 text-[var(--purple)]" />
+                    <div className="text-[11.5px] text-[var(--charcoal)]">
+                      <span className="font-bold block">Sunday: 12:00 PM – 8:00 PM</span>
+                      <span className="text-[var(--grey)] text-[10.5px]">Mon – Sat: Closed</span>
+                    </div>
+                  </div>
+                  <a
+                    href="/locations/kharadi"
+                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[var(--purple)] hover:text-[var(--purple-dark)] transition-colors"
+                  >
+                    <span>View Branch & Map</span>
+                    <ChevronRight className="h-3.5 w-3.5" />
                   </a>
                 </div>
               </div>

@@ -15,16 +15,16 @@ ${siteConfig.description}
 - **Geolocation**: Latitude ${siteConfig.geo.latitude}, Longitude ${siteConfig.geo.longitude}
 
 ## All Skin, Hair & Laser Treatments & Services
-${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href}): ${t.description}`).join("\n")}
+${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href}${t.href.endsWith('/') ? '' : '/'}): ${t.description}`).join("\n")}
 
 ## Useful Navigation Links
-- [**Home**](${siteConfig.url}/)
-- [**About the Clinic**](${siteConfig.url}/about)
-- [**Our Services Directory**](${siteConfig.url}/treatment)
-- [**Patient Testimonials**](${siteConfig.url}/testimonials)
-- [**Contact Info & Directions**](${siteConfig.url}/contact-us)
-- [**Gallery**](${siteConfig.url}/gallery)
-- [**Sitemap XML**](${siteConfig.url}/sitemap.xml)
+- [**Home**](${siteConfig.url}/best-skin-care-clinic-in-pune/)
+- [**About the Clinic**](${siteConfig.url}/best-skin-care-clinic-in-pune/about)
+- [**Our Services Directory**](${siteConfig.url}/best-skin-care-clinic-in-pune/treatment)
+- [**Patient Testimonials**](${siteConfig.url}/best-skin-care-clinic-in-pune/testimonials)
+- [**Contact Info & Directions**](${siteConfig.url}/best-skin-care-clinic-in-pune/contact-us)
+- [**Gallery**](${siteConfig.url}/best-skin-care-clinic-in-pune/gallery)
+- [**Sitemap XML**](${siteConfig.url}/best-skin-care-clinic-in-pune/sitemap.xml)
 `;
 }
 
@@ -35,7 +35,7 @@ export function getLlmsFullText() {
 
 ### Dr. Abhimanyu Jagtap
 - **Role**: Skin, Hair & Laser Specialist
-- **Experience**: 12+ Years of clinical experience in advanced dermatology
+- **Experience**: 8+ Years of clinical experience in advanced dermatology
 - **Specializations**: FUE Hair Transplant, PRP Hair & Skin, Laser Rejuvenation, Acne & Scar revision, Aesthetic Medicine.
 
 ## Frequently Asked Questions (FAQ)
