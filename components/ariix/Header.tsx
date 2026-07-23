@@ -24,10 +24,13 @@ export function Header() {
   }, [mobileMenuOpen]);
 
   const isActive = (path: string) => {
-    if (path === '/best-skin-care-clinic-in-pune/') {
-      return pathname === '/' || pathname === '/best-skin-care-clinic-in-pune/';
+    const cleanPath = pathname.endsWith('/') && pathname !== '/' ? pathname.slice(0, -1) : pathname;
+    const targetPath = path.endsWith('/') && path !== '/' ? path.slice(0, -1) : path;
+
+    if (targetPath === '/' || targetPath === '/best-skin-care-clinic-in-pune') {
+      return cleanPath === '/' || cleanPath === '/best-skin-care-clinic-in-pune';
     }
-    return pathname.startsWith(path);
+    return cleanPath === targetPath || cleanPath.startsWith(`${targetPath}/`);
   };
   const openDropdown = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -46,7 +49,7 @@ export function Header() {
         </Link>
         {/* Nav links */}
         <ul className="nav-links" id="navLinks">
-          <li><Link href="/best-skin-care-clinic-in-pune/" className={isActive('/') ? 'active' : ''}>Home</Link></li>
+          <li><Link href="/best-skin-care-clinic-in-pune/" className={isActive('/best-skin-care-clinic-in-pune/') ? 'active' : ''}>Home</Link></li>
           <li><Link href="/about" className={isActive('/about') ? 'active' : ''}>About Us</Link></li>
           {/* Our Treatments — dropdown trigger */}
           <li
