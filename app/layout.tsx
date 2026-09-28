@@ -1,28 +1,6 @@
-import { Plus_Jakarta_Sans, Playfair_Display, DM_Sans } from "next/font/google";
+/* eslint-disable @next/next/no-page-custom-font */
 import "./globals.css";
 import "./ariix.css";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-plus-jakarta-sans",
-  display: "fallback",
-});
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
-  variable: "--font-playfair-display",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  variable: "--font-dm-sans",
-  display: "swap",
-});
-
 import type { Metadata, Viewport } from "next";
 // import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { BackToTopFloat } from "@/components/landing/back-to-top-float";
@@ -45,10 +23,10 @@ export const metadata: Metadata = {
   creator: siteConfig.name,
   publisher: siteConfig.name,
   alternates: {
-    canonical: siteConfig.url,
+    canonical: `${siteConfig.url}/`,
     languages: {
-      "en-IN": siteConfig.url,
-      "x-default": siteConfig.url
+      "en-IN": `${siteConfig.url}/`,
+      "x-default": `${siteConfig.url}/`
     }
   },
   openGraph: {
@@ -110,9 +88,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={siteConfig.language} data-scroll-behavior="smooth" className={`${plusJakartaSans.variable} ${playfairDisplay.variable} ${dmSans.variable}`}>
-      <head />
-      <body id="page-top" className={dmSans.className}>
+    <html lang={siteConfig.language} data-scroll-behavior="smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@400..800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body id="page-top">
         {/* <GoogleTagManager gtmId="GTM-PXN97FFN" /> */}
         {/* <GoogleAnalytics gaId="G-5ZQYRLSYZZ" /> */}
         <a href="#main-content" className="skip-link">
