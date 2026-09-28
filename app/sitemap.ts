@@ -5,6 +5,7 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const mainPages = [
+    { url: `${siteConfig.url}/`, priority: 1.0, changeFrequency: "monthly" as const },
     { url: `${siteConfig.url}/best-skin-care-clinic-in-pune/`, priority: 1.0, changeFrequency: "monthly" as const },
     { url: `${siteConfig.url}/locations/kharadi/`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${siteConfig.url}/locations/sinhagad-road/`, priority: 0.9, changeFrequency: "monthly" as const },

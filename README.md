@@ -1,173 +1,99 @@
-# Dr Varun Dental Clinic Website
+# Ariix Hair and Skin Clinic Website
 
-Static, SEO-friendly dental clinic website built with Next.js App Router, TypeScript, Tailwind CSS, local image assets, structured data, sitemap, robots.txt, and AI crawler summary files.
+High-performance, production-ready, SEO-optimized clinic website built with **Next.js 15 (App Router)**, **TypeScript**, and **Tailwind CSS**. Deployed on **Cloudflare Pages** at [ariixhairandskinclinic.com](https://ariixhairandskinclinic.com).
 
-The first landing page is adapted from `stitch design/code.html` and `stitch design/DESIGN.md`, with the visible brand changed to **Dr Varun Dental Clinic**.
+---
 
-## Tech Stack
+## Tech Stack & Architecture
 
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- Local static assets in `public/images`
-- Static export output for Hostinger or any static web host
+- **Framework**: Next.js 15 (App Router)
+- **Runtime**: React 19
+- **Styling**: Tailwind CSS & Modern Clean Custom Design (`app/ariix.css`)
+- **Icons**: Lucide React
+- **Output Mode**: Static HTML Export (`output: "export"`)
+- **Hosting**: Cloudflare Pages (Edge CDN, SSL Full Strict, Global Brotli)
+- **Primary Domain**: `https://ariixhairandskinclinic.com`
+
+---
+
+## Key Features
+
+- **25+ Specialized Treatment Pages**: Detailed clinical guides for Hair Transplant, PRP, Laser Hair Removal, HydraFacial, Acne Scar Treatment, Chemical Peels, and more.
+- **Multi-Branch Location SEO**: Dedicated landing pages for **Kharadi (Wagholi)** and **Sinhagad Road (Manikbag)** branches with verified NAP, Google Maps embeds, and branch hours.
+- **Deep Schema Markup (JSON-LD)**: `DermatologyClinic`, `Physician` (Dr. Abhimanyu Jagtap), `MedicalProcedure`, `MedicalWebPage`, `BreadcrumbList`, `WebSite`, and `FAQPage`.
+- **AI Engine Discovery (GEO / AEO)**: Full support for search engines and generative AI crawlers via `/llms.txt`, `/llms-full.txt`, `/robots.txt`, and `/sitemap.xml`.
+- **Zero-Redirect Instant Render**: Clean direct root homepage rendering with self-referential canonical tags.
+- **Optimized WebP Assets**: Clean, lightweight, layout-stable image assets with descriptive alt attributes.
+
+---
 
 ## Project Structure
 
 ```txt
 app/
-  layout.tsx          Global metadata, font imports, viewport
-  page.tsx            Landing page composition
-  robots.ts           Static robots.txt metadata route
-  sitemap.ts          Static sitemap.xml metadata route
-  manifest.ts         Web app manifest metadata route
-  llms.txt/route.ts   AI summary file
-  llms-full.txt/route.ts
-components/landing/  Landing page sections
+  layout.tsx                    # Root layout with fonts, metadata, header, footer
+  page.tsx                      # Root homepage (Instant render)
+  best-skin-care-clinic-in-pune # Canonical home route
+  locations/
+    kharadi/                    # Kharadi branch landing page
+    sinhagad-road/              # Sinhagad Road branch landing page
+  about/                        # About Dr. Abhimanyu Jagtap & Clinic
+  treatment/                    # Treatments directory
+  gallery/                      # Before & After case gallery
+  testimonials/                 # Patient reviews & stories
+  contact-us/                   # Appointment booking & directions
+  sitemap.ts                    # Auto-generated XML Sitemap
+  robots.ts                     # Search & AI crawler rules
+  manifest.ts                   # Web App Manifest
+  llms.txt/route.ts             # AI agent concise knowledge index
+  llms-full.txt/route.ts        # AI agent full clinic knowledge index
+components/
+  ariix/                        # Header, Footer, ScrollToTop, Navigation
+  treatment/                    # Reusable treatment page template & components
+  gallery/                      # Lightbox gallery component
+  landing/                      # Floats (WhatsApp, Back-to-Top)
 lib/
-  site-config.ts      Clinic content, contact details, SEO placeholders
-  structured-data.ts  JSON-LD generators
-  llms.ts             AI summary text generators
+  site-config.ts                # Single source of truth (NAP, doctors, treatments, FAQs)
+  structured-data.ts            # LocalBusiness & Organization JSON-LD schemas
+  llms.ts                       # Markdown generator for LLMs
 public/
-  images/             Downloaded local prototype images
-  favicon.svg
-  .htaccess           Optional Apache/Hostinger cache rules
-stitch design/        Original reference files
+  images/                       # WebP optimized clinic assets & treatment photos
+  favicon.svg                   # Vector favicon
 ```
 
-## Installation
+---
 
-1. Open a terminal in this folder:
+## Local Development
 
-```bash
-cd "C:\Users\ACER\Desktop\Dr Varun Dental Website"
-```
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. Install dependencies:
+2. Start local development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm install
-```
+3. Open [http://127.0.0.1:3000](http://127.0.0.1:3000) in your browser.
 
-3. Start local development:
+---
 
-```bash
-npm run dev
-```
+## Production Build & Static Export
 
-4. Open:
-
-```txt
-http://127.0.0.1:3000
-```
-
-## Build Static Site
-
-Run:
-
+Generate the pre-rendered static site:
 ```bash
 npm run build
 ```
 
-Next.js is configured with:
-
-```js
-output: "export"
-trailingSlash: true
-images: { unoptimized: true }
-```
-
-The production static website is generated in:
-
-```txt
-.next-build/
-```
-
-## Preview Static Export
-
-After building:
-
+Preview the static production build locally:
 ```bash
 npm run preview
 ```
 
-Open:
+---
 
-```txt
-http://127.0.0.1:4173
-```
+## Deployment & SEO Documentation
 
-## Hostinger Deployment
-
-1. Run `npm run build`.
-2. Open the generated `.next-build/` folder.
-3. Upload the **contents** of `.next-build/` into Hostinger `public_html`.
-4. Confirm these URLs work after deployment:
-
-```txt
-https://your-domain.com/
-https://your-domain.com/robots.txt
-https://your-domain.com/sitemap.xml
-https://your-domain.com/llms.txt
-https://your-domain.com/llms-full.txt
-```
-
-5. Submit `https://your-domain.com/sitemap.xml` in Google Search Console.
-
-## Before Launch Checklist
-
-Update `lib/site-config.ts`:
-
-- Replace `https://www.drvarundental.com` with the final domain.
-- Replace placeholder phone, email, address, city, pin code, and coordinates.
-- Replace social profile URLs.
-- Replace doctor names/team details with approved real details.
-- Replace testimonials with approved real patient testimonials or remove them.
-- Update services and FAQs for the actual clinic offering.
-
-Also check:
-
-- `npm run lint`
-- `npm run build`
-- Lighthouse score
-- Google Rich Results Test
-- Mobile layout
-- Favicon visibility
-- Contact links
-
-If Lighthouse reports missing metadata or an invalid robots file during local testing, restart the dev server and hard refresh the browser. Confirm these local URLs return `200` before rerunning Lighthouse:
-
-```txt
-http://127.0.0.1:3000/
-http://127.0.0.1:3000/robots.txt
-http://127.0.0.1:3000/sitemap.xml
-```
-
-## SEO, AEO, GEO Features
-
-- Static HTML export for fast crawling and hosting.
-- Page metadata, canonical URL, Open Graph, and Twitter card.
-- JSON-LD for Dentist, Organization, WebSite, BreadcrumbList, and FAQPage.
-- `robots.txt` allows major search and AI crawlers.
-- `sitemap.xml` exposes the homepage.
-- `llms.txt` and `llms-full.txt` summarize the clinic for answer engines.
-- Local images with alt text and fixed dimensions to reduce layout shift.
-
-## Future Pages
-
-Add new pages in the `app/` directory, for example:
-
-```txt
-app/services/page.tsx
-app/about/page.tsx
-app/contact/page.tsx
-```
-
-Then update:
-
-- Header/footer navigation in `lib/site-config.ts`
-- `app/sitemap.ts`
-- Relevant structured data
-- README deployment notes if needed
-
-Keep the site static by avoiding API routes, server actions, middleware, cookies, and request-time data fetching.
+For complete post-deployment guides, Cloudflare DNS, Google Search Console indexing, and Google Business Profile setup, see:
+📄 [`DEPLOYMENT_AND_SEO_GUIDE.md`](./DEPLOYMENT_AND_SEO_GUIDE.md)
