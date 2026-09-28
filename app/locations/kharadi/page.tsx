@@ -53,12 +53,7 @@ export default function KharadiLocationPage() {
           "opens": "12:00",
           "closes": "20:00"
         }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": locationData.reviews.rating,
-        "reviewCount": locationData.reviews.count
-      }
+      ]
     },
     {
       "@context": "https://schema.org",

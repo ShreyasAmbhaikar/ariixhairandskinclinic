@@ -60,12 +60,7 @@ export default function BestSkinCareClinicPage() {
           "opens": "12:00",
           "closes": "20:00"
         }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": kharadi.reviews.rating,
-        "reviewCount": kharadi.reviews.count
-      }
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -119,12 +114,7 @@ export default function BestSkinCareClinicPage() {
           "opens": "17:30",
           "closes": "21:00"
         }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": sinhagad.reviews.rating,
-        "reviewCount": sinhagad.reviews.count
-      }
+      ]
     }
   ];
 

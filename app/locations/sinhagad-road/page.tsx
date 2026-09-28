@@ -73,12 +73,7 @@ export default function SinhagadRoadLocationPage() {
           "opens": "17:30",
           "closes": "21:00"
         }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": locationData.reviews.rating,
-        "reviewCount": locationData.reviews.count
-      }
+      ]
     },
     {
       "@context": "https://schema.org",
