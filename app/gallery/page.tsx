@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: `Gallery | ${siteConfig.shortName}`,
     description:
       "Explore before and after treatment results, clinic moments, and patient transformations at Ariix Hair and Skin Clinic.",
-    url: `${siteConfig.url}/gallery`,
+    url: `${siteConfig.url}/gallery/`,
     images: [
       {
         url: "/images/results/hair-transplant-male-2.webp",

@@ -17,6 +17,10 @@ ${siteConfig.description}
 ## All Skin, Hair & Laser Treatments & Services
 ${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href}${t.href.endsWith('/') ? '' : '/'}): ${t.description}`).join("\n")}
 
+## Branch Locations
+- [**Kharadi Clinic (Upper Kharadi Main Rd, Wagholi)**](${siteConfig.url}/locations/kharadi/)
+- [**Sinhagad Road Clinic (Manikbag, Anand Nagar)**](${siteConfig.url}/locations/sinhagad-road/)
+
 ## Useful Navigation Links
 - [**Home**](${siteConfig.url}/best-skin-care-clinic-in-pune/)
 - [**About the Clinic**](${siteConfig.url}/about/)

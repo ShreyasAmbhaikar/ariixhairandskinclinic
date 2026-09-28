@@ -3,8 +3,8 @@ export const siteConfig = {
   shortName: "Ariix Clinic",
   tagline:
     "Expert dermatology, laser therapies, and hair restoration clinic offering personalized care for lasting, visible results.",
-  url: "https://www.ariixhairskinclinic.com",
-  domainPlaceholder: true,
+  url: "https://ariixhairandskinclinic.com",
+  domainPlaceholder: false,
   locale: "en_IN",
   language: "en",
   lastUpdated: "2026-06-20",

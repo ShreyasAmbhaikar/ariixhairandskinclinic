@@ -12,7 +12,7 @@ export function getStructuredData() {
       "@type": "DermatologyClinic",
       "@id": `${siteConfig.url}/locations/${loc.slug}/#clinic`,
       name: `${loc.name} - ${loc.branchName}`,
-      url: `${siteConfig.url}/locations/${loc.slug}`,
+      url: `${siteConfig.url}/locations/${loc.slug}/`,
       image: [
         absoluteUrl(siteConfig.images.logo),
         absoluteUrl("/images/hair-transplant-hero.webp"),
